@@ -1,0 +1,1392 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8">
+<title>Claim AP12054472 — Cataract surgery</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<style>
+*,*::before,*::after{box-sizing:border-box}
+:root{
+  color-scheme:light;
+  --bg:#f4f5f7; --surface:#ffffff; --surface-2:#fafbfc; --line:#e2e5ea; --line-2:#eef0f3;
+  --ink:#101725; --ink-2:#4a5361; --ink-3:#79818f;
+  --brand:#123a63; --brand-ink:#ffffff; --accent:#2a78d6;
+  --good:#0ca30c; --warning:#fab219; --serious:#ec835a; --critical:#d03b3b;
+  --good-bg:#eaf7ea; --warning-bg:#fdf4e0; --serious-bg:#fdeee7; --critical-bg:#fbeaea;
+  --good-ink:#0a7a0a; --warning-ink:#8a5a00; --serious-ink:#a84a20; --critical-ink:#b02c2c;
+  --seq-100:#cde2fb; --seq-250:#86b6ef; --seq-450:#2a78d6; --seq-600:#184f95;
+  --shadow:0 1px 2px rgba(16,24,40,.04),0 2px 8px rgba(16,24,40,.06);
+  --shadow-lg:0 4px 16px rgba(16,24,40,.08);
+  --r:12px;
+}
+@media (prefers-color-scheme:dark){:root:where(:not([data-theme=light])){
+  color-scheme:dark;
+  --bg:#0d1017; --surface:#161a22; --surface-2:#1b2029; --line:#272d38; --line-2:#212630;
+  --ink:#e9edf3; --ink-2:#a9b2c0; --ink-3:#7d8695;
+  --brand:#0f2942; --brand-ink:#e9edf3; --accent:#3987e5;
+  --good:#0ca30c; --warning:#fab219; --serious:#ec835a; --critical:#d03b3b;
+  --good-bg:#0f2410; --warning-bg:#2b2210; --serious-bg:#2c1c14; --critical-bg:#2c1414;
+  --good-ink:#5fd35f; --warning-ink:#f0c069; --serious-ink:#f0a583; --critical-ink:#f08585;
+  --seq-100:#184f95; --seq-250:#2a78d6; --seq-450:#3987e5; --seq-600:#86b6ef;
+  --shadow:none; --shadow-lg:none;
+}}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);
+  font:15px/1.62 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+  -webkit-font-smoothing:antialiased}
+h1,h2,h3,h4{margin:0;line-height:1.24;letter-spacing:-.014em}
+a{color:var(--accent);text-decoration:none}
+.wrap{width:100%;margin:0;padding:0 32px}
+@media (max-width:640px){.wrap{padding:0 16px}}
+
+/* ---------- app bar ---------- */
+.appbar{background:var(--brand);color:var(--brand-ink);position:sticky;top:0;z-index:40;
+  box-shadow:0 1px 0 rgba(255,255,255,.06)}
+.appbar .wrap{display:flex;align-items:center;gap:16px;height:60px}
+.brand{display:flex;align-items:center;gap:10px;font-weight:700;font-size:15px;letter-spacing:-.01em;color:var(--brand-ink)}
+.brand .mark{width:26px;height:26px;border-radius:7px;background:rgba(255,255,255,.14);
+  display:grid;place-items:center;font-size:12px;font-weight:800}
+.brand small{display:block;font-weight:500;font-size:11px;opacity:.72;letter-spacing:.02em}
+.appbar .spacer{flex:1}
+.appbar .cid{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:13px;
+  background:rgba(255,255,255,.12);padding:5px 11px;border-radius:7px;letter-spacing:.04em}
+.btn{display:inline-flex;align-items:center;gap:7px;font:inherit;font-size:13px;font-weight:600;
+  padding:7px 13px;border-radius:8px;border:1px solid rgba(255,255,255,.22);
+  background:transparent;color:var(--brand-ink);cursor:pointer}
+.btn:hover{background:rgba(255,255,255,.1)}
+
+/* ---------- sub nav ---------- */
+.subnav{position:sticky;top:60px;z-index:30;background:var(--surface);border-bottom:1px solid var(--line)}
+.subnav .wrap{display:flex;gap:2px;overflow-x:auto;scrollbar-width:none}
+.subnav .wrap::-webkit-scrollbar{display:none}
+.subnav a{padding:13px 14px;font-size:13.5px;font-weight:600;color:var(--ink-2);white-space:nowrap;
+  border-bottom:2px solid transparent}
+.subnav a:hover{color:var(--ink)}
+.subnav a b{font-weight:700;color:var(--ink-3);margin-left:5px;font-size:12px}
+
+/* ---------- hero / decision ---------- */
+main{padding:26px 0 90px}
+/* ---------- claim identity card ---------- */
+.topstrip{display:flex;gap:14px;align-items:stretch;flex-wrap:wrap}
+.topstrip .idcard{flex:0 1 auto}
+.topstrip .kpis{flex:1 1 500px;margin-top:0;grid-template-columns:repeat(4,minmax(0,1fr));
+  justify-content:stretch}
+@media (max-width:1180px){.topstrip .kpis{flex-basis:100%}}
+/* sized to its content, not stretched across the window */
+.idcard{display:inline-grid;grid-template-columns:repeat(4,auto);gap:0;max-width:100%;
+  background:var(--surface);border:1px solid var(--line);border-radius:14px;
+  box-shadow:var(--shadow);overflow:hidden}
+@media (max-width:860px){.idcard{display:grid;grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:480px){.idcard{grid-template-columns:1fr}}
+.idcard .f{padding:13px 18px 14px;border-right:1px solid var(--line-2);min-width:0}
+.idcard .f:last-child{border-right:none}
+@media (max-width:860px){.idcard .f{border-bottom:1px solid var(--line-2)}
+  .idcard .f:nth-child(2n){border-right:none}}
+.idcard .k{font-size:10.5px;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-3)}
+.idcard .v{font-size:17px;font-weight:700;letter-spacing:-.015em;margin-top:6px;line-height:1.3;
+  overflow-wrap:anywhere;max-width:22ch}
+.idcard .v.mono{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:15px;
+  letter-spacing:.02em}
+.idcard .v.soft{color:var(--ink-3);font-weight:600;font-size:16px}
+.panel{background:var(--surface);border:1px solid var(--line);border-radius:var(--r);box-shadow:var(--shadow)}
+.decision{padding:24px;display:flex;flex-direction:column;gap:14px}
+.dhead{display:flex;align-items:center;gap:12px;flex-wrap:wrap}
+.verdict{display:inline-flex;align-items:center;gap:9px;font-weight:700;font-size:15px;
+  padding:9px 16px;border-radius:9px;border:1px solid}
+.verdict .vi{width:20px;height:20px;border-radius:50%;display:grid;place-items:center;
+  font-size:12px;color:#fff;flex:none}
+.verdict.critical{background:var(--critical-bg);border-color:var(--critical);color:var(--critical-ink)}
+.verdict.critical .vi{background:var(--critical)}
+.verdict.serious{background:var(--serious-bg);border-color:var(--serious);color:var(--serious-ink)}
+.verdict.serious .vi{background:var(--serious)}
+.verdict.warning{background:var(--warning-bg);border-color:var(--warning);color:var(--warning-ink)}
+.verdict.warning .vi{background:var(--warning);color:#3d2a00}
+.verdict.good{background:var(--good-bg);border-color:var(--good);color:var(--good-ink)}
+.verdict.good .vi{background:var(--good)}
+.proc h1{font-size:23px}
+.proc p{margin:3px 0 0;color:var(--ink-3);font-size:13.5px}
+.action{background:var(--surface-2);border:1px solid var(--line-2);border-left:3px solid var(--accent);
+  border-radius:9px;padding:13px 15px;font-size:14.5px;font-weight:600}
+.story{margin:0;color:var(--ink-2);font-size:14.5px;max-width:68ch}
+.story b{color:var(--ink);font-weight:700}
+.why{display:flex;flex-wrap:wrap;gap:8px}
+.why .rchip{display:inline-flex;align-items:center;gap:8px;background:var(--critical-bg);
+  color:var(--critical-ink);border:1px solid rgba(208,59,59,.28);border-radius:999px;
+  padding:6px 13px 6px 9px;font-size:13px;font-weight:650}
+.why .rchip .n{width:18px;height:18px;border-radius:50%;background:var(--critical);color:#fff;
+  display:grid;place-items:center;font-size:10.5px;font-weight:800;flex:none}
+
+/* ---------- rail ---------- */
+.rail{padding:20px 22px;display:flex;flex-direction:column;gap:18px}
+.rail .rl{font-size:10.5px;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-3)}
+.hero-fig{font-size:44px;font-weight:750;letter-spacing:-.03em;line-height:1.05;margin-top:4px;color:var(--ink)}
+.hero-sub{font-size:13px;color:var(--ink-3);margin-top:3px}
+.railrow{display:flex;justify-content:space-between;align-items:baseline;gap:10px;font-size:14px}
+.railrow .k{color:var(--ink-2)}
+.railrow .v{font-weight:700;font-variant-numeric:tabular-nums}
+.hr{height:1px;background:var(--line);margin:-4px 0}
+/* status-coloured fill, so the track stays neutral rather than a second hue */
+.meter{height:9px;border-radius:99px;background:var(--line-2);overflow:hidden;display:flex;margin-top:8px}
+.meter .fill{height:100%;border-radius:99px}
+.meter .fill.ok{background:var(--good)} .meter .fill.warn{background:var(--warning)}
+.meter .fill.bad{background:var(--critical)} .meter .fill.seq{background:var(--seq-450)}
+.legend{display:flex;gap:14px;flex-wrap:wrap;font-size:12px;color:var(--ink-2);margin-top:9px}
+.legend i{width:9px;height:9px;border-radius:3px;display:inline-block;margin-right:6px;vertical-align:-1px}
+
+/* ---------- KPI strip ---------- */
+.kpis{display:grid;grid-template-columns:repeat(4,minmax(170px,240px));gap:14px;
+  margin-top:14px;justify-content:start}
+@media (max-width:880px){.kpis{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.kpi{background:var(--surface);border:1px solid var(--line);border-radius:var(--r);padding:13px 14px;
+  box-shadow:var(--shadow);border-top:3px solid var(--line)}
+.kpi.k-critical{border-top-color:var(--critical)} .kpi.k-warning{border-top-color:var(--warning)}
+.kpi.k-good{border-top-color:var(--good)} .kpi.k-info{border-top-color:var(--seq-450)}
+.kpi .lab{font-size:10.5px;font-weight:800;letter-spacing:.07em;text-transform:uppercase;color:var(--ink-3)}
+.kpi .val{font-size:26px;font-weight:750;letter-spacing:-.025em;margin-top:7px;line-height:1.1}
+.kpi .val small{font-size:15px;font-weight:600;color:var(--ink-3);letter-spacing:0}
+.kpi .sub{font-size:12px;color:var(--ink-3);margin-top:4px;line-height:1.35}
+
+/* ---------- sections: each one is its own bordered block ---------- */
+section.blk{margin-top:26px;scroll-margin-top:120px;background:var(--surface);
+  border:1px solid var(--line);border-radius:14px;box-shadow:var(--shadow);overflow:hidden}
+section.blk>.blkhead{display:flex;align-items:flex-start;justify-content:space-between;gap:18px;
+  flex-wrap:wrap;padding:17px 22px;background:var(--surface-2);border-bottom:1px solid var(--line);
+  margin:0;border-radius:0}
+section.blk>.blkbody{padding:20px 22px;background:var(--bg)}
+section.blk>.blkbody>*:last-child{margin-bottom:0}
+/* a coloured cap so the eye can tell the blocks apart at a glance */
+section.blk.a-critical{border-top:3px solid var(--critical)}
+section.blk.a-warning{border-top:3px solid var(--warning)}
+section.blk.a-info{border-top:3px solid var(--seq-450)}
+section.blk.a-plain{border-top:3px solid var(--line)}
+.blkhead .eyebrow{font-size:10.5px;font-weight:800;letter-spacing:.11em;text-transform:uppercase;color:var(--accent)}
+.blkhead h2{font-size:20px;margin-top:5px;display:flex;align-items:center;gap:10px}
+.blkhead p{margin:6px 0 0;color:var(--ink-3);font-size:13.5px;max-width:76ch}
+.blkhead .right{display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+.badge{font-size:12px;font-weight:700;padding:3px 10px;border-radius:999px;background:var(--line-2);color:var(--ink-2)}
+.badge.critical{background:var(--critical-bg);color:var(--critical-ink)}
+.badge.warning{background:var(--warning-bg);color:var(--warning-ink)}
+.badge.good{background:var(--good-bg);color:var(--good-ink)}
+.badge.info{background:var(--seq-100);color:var(--seq-600)}
+
+/* ---------- finding cards ---------- */
+.find{background:var(--surface);border:1px solid var(--line);border-radius:var(--r);
+  box-shadow:var(--shadow);margin-bottom:14px;overflow:hidden;display:flex}
+.find .stripe{width:4px;flex:none;background:var(--critical)}
+.find.alt .stripe{background:var(--seq-450)}
+.find .body{padding:18px 20px;flex:1;min-width:0}
+.find .ftop{display:flex;align-items:flex-start;justify-content:space-between;gap:14px;flex-wrap:wrap}
+.find h3{font-size:16px;font-weight:700}
+.find .rule{margin:9px 0 0;font-size:13.5px;color:var(--ink-3);padding-left:11px;border-left:2px solid var(--line)}
+.find .ev{margin:12px 0 0;font-size:14.5px}
+.find .ev .lab{display:block;font-size:10.5px;font-weight:800;letter-spacing:.09em;
+  text-transform:uppercase;color:var(--ink-3);margin-bottom:4px}
+
+/* ---------- chips ---------- */
+.refs{display:flex;flex-wrap:wrap;gap:7px;align-items:center;margin-top:13px;padding-top:12px;
+  border-top:1px dashed var(--line)}
+.reflab{font-size:10.5px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-3)}
+.chip{display:inline-flex;align-items:center;gap:6px;background:var(--surface-2);border:1px solid var(--line);
+  border-radius:7px;padding:4px 9px;font-size:12px;color:var(--ink-2);max-width:100%}
+.chip .ic{width:12px;height:12px;flex:none;opacity:.6}
+.chip .fname{overflow:hidden;text-overflow:ellipsis;white-space:nowrap;max-width:34ch}
+.chip .pg{color:var(--ink-3);font-weight:700;font-size:11px;white-space:nowrap}
+.tag{font-size:10px;font-weight:800;letter-spacing:.06em;text-transform:uppercase;padding:3px 7px;
+  border-radius:5px;white-space:nowrap;cursor:help;flex:none}
+.t-llm{background:var(--seq-100);color:var(--seq-600)}
+.t-vlm{background:var(--serious-bg);color:var(--serious-ink)}
+.t-manual{background:var(--seq-100);color:var(--seq-600)}
+.fmeta{display:inline-flex;align-items:center;gap:10px;flex:none;margin-left:auto}
+.item .fmeta{margin-left:0}
+/* the same plain checkbox the deduction table uses */
+.frow.hide{display:none}
+.frow .rulecell{padding-bottom:14px}
+.flagname{font-size:12.5px;font-weight:700;color:var(--critical-ink);display:inline-block;
+  max-width:24ch;line-height:1.35}
+tr.off .flagname{color:var(--ink-3)}
+[data-flag].off{opacity:.45}
+[data-flag].off .rulehead{text-decoration:line-through}
+
+.pill{display:inline-flex;align-items:center;gap:6px;font-size:11.5px;font-weight:700;padding:3px 10px;
+  border-radius:999px;white-space:nowrap}
+.pill .dot{width:7px;height:7px;border-radius:50%;flex:none}
+.pill.good{background:var(--good-bg);color:var(--good-ink)} .pill.good .dot{background:var(--good)}
+.pill.critical{background:var(--critical-bg);color:var(--critical-ink)} .pill.critical .dot{background:var(--critical)}
+
+/* ---------- tables ---------- */
+.tablecard{background:var(--surface);border:1px solid var(--line);border-radius:var(--r);
+  box-shadow:var(--shadow);overflow:hidden}
+.tscroll{overflow-x:auto}
+table{width:100%;border-collapse:collapse;font-size:14px}
+thead th{text-align:left;font-size:10.5px;font-weight:800;letter-spacing:.09em;text-transform:uppercase;
+  color:var(--ink-3);background:var(--surface-2);padding:11px 16px;border-bottom:1px solid var(--line);white-space:nowrap}
+tbody td{padding:13px 16px;border-bottom:1px solid var(--line-2);vertical-align:top}
+tbody tr:hover{background:var(--surface-2)}
+tbody tr.exp td{background:var(--surface-2);padding-top:0;border-bottom:1px solid var(--line)}
+.num{text-align:right;font-variant-numeric:tabular-nums;white-space:nowrap}
+.amt{font-weight:700;font-variant-numeric:tabular-nums;white-space:nowrap}
+tfoot td{padding:14px 16px;font-weight:750;background:var(--surface-2);border-top:2px solid var(--line)}
+tfoot .grand{font-size:18px;letter-spacing:-.02em;color:var(--critical-ink)}
+.cat{font-size:12px;font-weight:700;color:var(--ink-2);white-space:nowrap}
+.basis{font-size:12.5px;color:var(--ink-3);white-space:nowrap;font-variant-numeric:tabular-nums}
+.rulecell{min-width:32ch}
+.rulehead{font-weight:650;font-size:14px}
+.evline{margin-top:7px;font-size:13.5px;color:var(--ink-2);max-width:104ch}
+.evline .lab{display:block;font-size:10px;font-weight:800;letter-spacing:.09em;text-transform:uppercase;color:var(--ink-3);margin-bottom:3px}
+.rulecell .refs{margin-top:10px;padding-top:9px}
+.exbtn{background:none;border:1px solid var(--line);border-radius:6px;color:var(--ink-3);cursor:pointer;
+  font:inherit;font-size:11px;font-weight:700;padding:3px 8px;white-space:nowrap}
+.exbtn:hover{border-color:var(--accent);color:var(--accent)}
+tr.exp{display:none} tr.exp.open{display:table-row}
+.expbox{padding:2px 0 14px;font-size:13.5px;color:var(--ink-2);max-width:96ch}
+.expbox .lab{display:block;font-size:10.5px;font-weight:800;letter-spacing:.09em;text-transform:uppercase;
+  color:var(--ink-3);margin-bottom:4px}
+
+/* ---------- compliance ---------- */
+.split{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.1fr);gap:16px;align-items:start}
+.split.compact{grid-template-columns:minmax(280px,360px) minmax(0,1fr)}
+@media (max-width:880px){.split.compact{grid-template-columns:1fr}}
+@media (max-width:880px){.split{grid-template-columns:1fr}}
+.stack{display:flex;height:14px;border-radius:99px;overflow:hidden;gap:2px;background:transparent}
+.stack i{display:block;height:100%}
+.stack i:first-child{border-radius:99px 0 0 99px} .stack i:last-child{border-radius:0 99px 99px 0}
+.catlist{display:flex;flex-direction:column}
+.catrow{display:grid;grid-template-columns:1fr auto;gap:4px 12px;padding:12px 0;border-bottom:1px solid var(--line-2)}
+.catrow:last-child{border-bottom:none}
+.catrow .cname{font-size:13.5px;font-weight:650}
+.catrow .cnum{font-size:12.5px;color:var(--ink-3);font-variant-numeric:tabular-nums}
+.catrow .track{grid-column:1/-1;height:7px;border-radius:99px;background:var(--line-2);overflow:hidden;display:flex;gap:2px}
+.catrow .track i{height:100%;border-radius:99px}
+
+/* ---------- checklist ---------- */
+.toolbar{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin:0}
+.fbtn{font:inherit;font-size:13px;font-weight:650;padding:7px 14px;border-radius:8px;cursor:pointer;
+  border:1px solid var(--line);background:var(--surface);color:var(--ink-2)}
+.fbtn:hover{border-color:var(--accent);color:var(--accent)}
+.fbtn.on{background:var(--brand);border-color:var(--brand);color:var(--brand-ink)}
+.fbtn .c{opacity:.65;margin-left:5px;font-variant-numeric:tabular-nums}
+.grp{margin-bottom:22px}
+.grptitle{display:flex;align-items:center;gap:10px;margin:0 0 9px;font-size:12px;font-weight:800;
+  letter-spacing:.08em;text-transform:uppercase;color:var(--ink-3)}
+.grptitle .ln{flex:1;height:1px;background:var(--line)}
+.item{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:14px 16px;
+  margin-bottom:8px;box-shadow:var(--shadow);display:grid;grid-template-columns:auto auto 1fr;gap:12px;
+  align-items:start}
+.item.hide{display:none}
+.item>.cbx{margin-top:3px}
+.item .mk{width:22px;height:22px;border-radius:50%;display:grid;place-items:center;font-size:12px;
+  font-weight:800;color:#fff;margin-top:1px}
+.item.ok .mk{background:var(--good)} .item.no .mk{background:var(--critical)}
+.item .txt{min-width:0}
+.item .rq{font-size:14.5px;font-weight:650;display:flex;gap:9px;align-items:flex-start;flex-wrap:wrap}
+.item .ev{margin:7px 0 0;font-size:13.5px;color:var(--ink-2)}
+.item .ev.clamp{display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.more{background:none;border:none;color:var(--accent);font:inherit;font-size:12.5px;font-weight:700;
+  cursor:pointer;padding:4px 0 0}
+
+/* ---------- doc index ---------- */
+.docgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(270px,1fr));gap:10px}
+.doccard{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:12px 14px;
+  box-shadow:var(--shadow);display:flex;gap:10px;align-items:flex-start}
+.doccard .nm{font-size:13px;font-weight:650;overflow-wrap:anywhere}
+.doccard .mt{font-size:11.5px;color:var(--ink-3);margin-top:3px}
+.doccard .cnt{margin-left:auto;font-size:11px;font-weight:800;background:var(--line-2);color:var(--ink-2);
+  border-radius:999px;padding:2px 8px;white-space:nowrap;flex:none}
+/* ---------- reviewer controls on the deduction table ---------- */
+.edbar{display:flex;flex-wrap:wrap;gap:10px;align-items:center;margin-bottom:12px}
+.edbar .sp{flex:1}
+.abtn{display:inline-flex;align-items:center;gap:7px;font:inherit;font-size:13px;font-weight:650;
+  padding:8px 14px;border-radius:8px;cursor:pointer;border:1px solid var(--line);
+  background:var(--surface);color:var(--ink-2)}
+.abtn:hover{border-color:var(--accent);color:var(--accent)}
+.abtn.primary{background:var(--brand);border-color:var(--brand);color:var(--brand-ink)}
+.abtn.primary:hover{opacity:.92;color:var(--brand-ink)}
+.ckcell{width:78px}
+.ck,.cbx{width:17px;height:17px;accent-color:var(--brand);cursor:pointer}
+tr.off{opacity:.44}
+tr.off .rulehead,tr.off .cat{text-decoration:line-through}
+.amtcell{display:inline-flex;align-items:center;justify-content:flex-end;gap:1px}
+.rs{color:var(--ink-3);font-weight:700;font-size:13px}
+.amtin{width:96px;font:inherit;font-size:14px;font-weight:700;text-align:right;padding:6px 9px;
+  border:1px solid transparent;border-radius:7px;background:transparent;color:var(--ink);
+  font-variant-numeric:tabular-nums}
+.amtin:hover{border-color:var(--line);background:var(--surface-2)}
+.amtin:focus{outline:none;border-color:var(--accent);background:var(--surface);
+  box-shadow:0 0 0 3px rgba(42,120,214,.16)}
+.txtin{font:inherit;font-size:13.5px;padding:7px 10px;border:1px solid var(--line);border-radius:7px;
+  background:var(--surface);color:var(--ink);width:100%;min-width:150px}
+.txtin:focus{outline:none;border-color:var(--accent);box-shadow:0 0 0 3px rgba(42,120,214,.16)}
+.editflag{display:inline-block;font-size:9.5px;font-weight:800;letter-spacing:.05em;text-transform:uppercase;
+  background:var(--seq-100);color:var(--seq-600);border-radius:4px;padding:2px 6px;margin-left:7px}
+.rmrow{background:none;border:none;color:var(--ink-3);cursor:pointer;font-size:17px;line-height:1;padding:2px 6px}
+.rmrow:hover{color:var(--critical)}
+.settle{display:flex;flex-wrap:wrap;gap:22px;align-items:flex-end;justify-content:flex-end}
+.settle .box{text-align:right}
+.settle .box .l{font-size:10.5px;font-weight:800;letter-spacing:.09em;text-transform:uppercase;color:var(--ink-3)}
+.settle .box .n{font-size:15px;font-weight:700;font-variant-numeric:tabular-nums;margin-top:3px}
+.settle .box.final .n{font-size:24px;letter-spacing:-.02em;color:var(--critical-ink)}
+.settle .box .n.muted{color:var(--ink-3);font-weight:600}
+.chgnote{font-size:12.5px;color:var(--seq-600);font-weight:650;margin-top:4px}
+.notewrap{margin-top:14px}
+.notewrap label{display:block;font-size:10.5px;font-weight:800;letter-spacing:.09em;text-transform:uppercase;
+  color:var(--ink-3);margin-bottom:6px}
+.notewrap textarea{width:100%;min-height:74px;font:inherit;font-size:14px;padding:11px 13px;
+  border:1px solid var(--line);border-radius:9px;background:var(--surface);color:var(--ink);resize:vertical}
+.notewrap textarea:focus{outline:none;border-color:var(--accent);box-shadow:0 0 0 3px rgba(42,120,214,.16)}
+
+/* ---------- file view ---------- */
+.filebar{background:var(--surface-2);border-bottom:1px solid var(--line)}
+.filebar .wrap{display:flex;align-items:center;gap:11px;padding-top:9px;padding-bottom:9px;flex-wrap:wrap}
+.filebar .lb{font-size:11.5px;font-weight:800;letter-spacing:.06em;text-transform:uppercase;color:var(--ink-3)}
+.filebar input{flex:1;min-width:220px;max-width:620px;font:inherit;font-size:13px;padding:7px 11px;
+  border:1px solid var(--line);border-radius:7px;background:var(--surface);color:var(--ink);
+  font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace}
+.filebar input:focus{outline:none;border-color:var(--accent);box-shadow:0 0 0 3px rgba(42,120,214,.16)}
+.filebar .hint{font-size:12px;color:var(--ink-3)}
+.filebar .ok{color:var(--good-ink);font-weight:700}
+.pgs{display:inline-flex;gap:3px;margin-left:2px}
+.pgbtn{display:inline-flex;align-items:center;gap:4px;font:inherit;font-size:11px;font-weight:750;
+  line-height:1;padding:3px 7px;border-radius:5px;cursor:pointer;border:1px solid var(--line);
+  background:var(--surface);color:var(--ink-3);font-variant-numeric:tabular-nums}
+.pgbtn:hover{border-color:var(--accent);color:var(--accent);background:var(--surface)}
+.pgbtn.off{opacity:.5;cursor:not-allowed;border-style:dashed}
+.pgbtn.off:hover{border-color:var(--line);color:var(--ink-3)}
+.pgbtn .eye{width:12px;height:12px;flex:none}
+.doccard.link{cursor:pointer} .doccard.link:hover{border-color:var(--accent)}
+.doccard .opens{display:flex;flex-wrap:wrap;gap:4px;margin-top:8px}
+/* ---------- document viewer ---------- */
+.vwrap{position:fixed;inset:0;z-index:90;display:none}
+.vwrap.open{display:block}
+.vbd{position:absolute;inset:0;background:rgba(9,13,20,.55)}
+.vpanel{position:absolute;top:0;right:0;bottom:0;width:min(920px,74vw);background:var(--surface);
+  border-left:1px solid var(--line);display:flex;flex-direction:column;box-shadow:-8px 0 30px rgba(9,13,20,.24)}
+@media (max-width:760px){.vpanel{width:100vw}}
+.vhead{display:flex;align-items:center;gap:12px;padding:13px 16px;border-bottom:1px solid var(--line);
+  background:var(--surface-2);flex-wrap:wrap}
+.vhead .vname{font-weight:700;font-size:14px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;
+  max-width:44ch}
+.vhead .vpage{font-size:12px;font-weight:700;color:var(--ink-3);background:var(--line-2);
+  border-radius:6px;padding:3px 9px;white-space:nowrap;font-variant-numeric:tabular-nums}
+.vhead .sp{flex:1}
+.vbody{flex:1;background:var(--bg);overflow:auto;display:flex;align-items:flex-start;justify-content:center;padding:14px}
+.vbody iframe{width:100%;height:100%;border:0;background:#fff;border-radius:8px}
+.vbody img{max-width:100%;height:auto;border-radius:8px;box-shadow:var(--shadow);background:#fff}
+.vfoot{padding:9px 16px;border-top:1px solid var(--line);background:var(--surface-2);
+  font-size:12px;color:var(--ink-3)}
+.vclose{font-size:20px;line-height:1;padding:4px 10px}
+.vstep{font-size:17px;line-height:1;padding:3px 11px}
+.vstep:disabled{opacity:.35;cursor:not-allowed;border-color:var(--line);color:var(--ink-3)}
+.vstrip{display:flex;gap:6px;flex-wrap:wrap;padding:0 16px;background:var(--surface-2)}
+.vstrip:not(:empty){padding:10px 16px;border-bottom:1px solid var(--line)}
+.ppill{font:inherit;font-size:12px;font-weight:700;min-width:30px;padding:4px 9px;border-radius:6px;
+  cursor:pointer;border:1px solid var(--line);background:var(--surface);color:var(--ink-2);
+  font-variant-numeric:tabular-nums}
+.ppill:hover{border-color:var(--accent);color:var(--accent)}
+.ppill.on{background:var(--brand);border-color:var(--brand);color:var(--brand-ink)}
+.toast{position:fixed;left:50%;bottom:26px;transform:translateX(-50%);z-index:80;max-width:min(560px,92vw);
+  background:var(--brand);color:var(--brand-ink);border-radius:10px;padding:13px 18px;font-size:13.5px;
+  box-shadow:var(--shadow-lg);display:none}
+.toast.show{display:block}
+.callout{display:flex;gap:13px;align-items:flex-start;background:var(--warning-bg);
+  border:1px solid rgba(250,178,25,.45);border-left:4px solid var(--warning);border-radius:10px;
+  padding:15px 17px;margin-bottom:14px;font-size:14px;color:var(--ink)}
+.callout .ci{width:21px;height:21px;border-radius:50%;background:var(--warning);color:#3d2a00;
+  display:grid;place-items:center;font-weight:800;font-size:13px;flex:none;margin-top:1px}
+.callout ul{margin:9px 0 0;padding-left:19px;color:var(--ink-2);font-size:13.5px}
+.callout li{margin-top:4px}
+.dupflag{display:inline-block;font-size:10px;font-weight:800;letter-spacing:.05em;text-transform:uppercase;
+  background:var(--warning-bg);color:var(--warning-ink);border:1px solid rgba(250,178,25,.5);
+  border-radius:5px;padding:2px 6px;margin-left:6px;white-space:nowrap;cursor:help}
+.empty{background:var(--surface);border:1px dashed var(--line);border-radius:var(--r);padding:24px;
+  color:var(--ink-3);font-size:14px;display:flex;gap:11px;align-items:center}
+.empty .ok{width:22px;height:22px;border-radius:50%;background:var(--good);color:#fff;display:grid;
+  place-items:center;font-size:12px;font-weight:800;flex:none}
+footer{margin-top:52px;padding:20px 0 0;border-top:1px solid var(--line);color:var(--ink-3);font-size:12px;
+  display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap}
+
+/* ---------- dashboard ---------- */
+.dash-hero{background:var(--surface);border:1px solid var(--line);border-radius:var(--r);
+  box-shadow:var(--shadow);padding:26px;display:grid;grid-template-columns:minmax(0,1fr) auto;gap:24px;align-items:center}
+@media (max-width:760px){.dash-hero{grid-template-columns:1fr}}
+.dash-hero h1{font-size:26px}
+.dash-hero p{margin:8px 0 0;color:var(--ink-2);font-size:14.5px;max-width:66ch}
+.bigfig{text-align:right}
+@media (max-width:760px){.bigfig{text-align:left}}
+.bigfig .n{font-size:52px;font-weight:750;letter-spacing:-.035em;line-height:1;color:var(--critical-ink)}
+.bigfig .l{font-size:12px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-3);margin-top:6px}
+td .cidlink{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-weight:700;font-size:13.5px}
+td .pname{font-size:12.5px;color:var(--ink-3);margin-top:2px}
+.barcell{min-width:132px}
+.bar{height:8px;border-radius:99px;background:var(--line-2);overflow:hidden;margin-top:5px}
+.bar i{display:block;height:100%;background:var(--seq-450);border-radius:99px}
+.vpill{display:inline-flex;align-items:center;gap:6px;font-size:11.5px;font-weight:750;padding:4px 10px;
+  border-radius:999px;white-space:nowrap}
+.vpill .dot{width:7px;height:7px;border-radius:50%;flex:none}
+.vpill.critical{background:var(--critical-bg);color:var(--critical-ink)} .vpill.critical .dot{background:var(--critical)}
+.vpill.serious{background:var(--serious-bg);color:var(--serious-ink)} .vpill.serious .dot{background:var(--serious)}
+.vpill.warning{background:var(--warning-bg);color:var(--warning-ink)} .vpill.warning .dot{background:var(--warning)}
+.vpill.good{background:var(--good-bg);color:var(--good-ink)} .vpill.good .dot{background:var(--good)}
+tbody tr.crow{cursor:pointer}
+.hbars{display:flex;flex-direction:column;gap:11px}
+.hbar .top{display:flex;justify-content:space-between;font-size:13px;gap:12px}
+.hbar .top .v{font-weight:700;font-variant-numeric:tabular-nums}
+.hbar .track{height:10px;border-radius:99px;background:var(--line-2);overflow:hidden;margin-top:5px}
+.hbar .track i{display:block;height:100%;background:var(--seq-450);border-radius:99px}
+
+@media print{
+  .appbar,.subnav,.toolbar,.exbtn,.more,.btn,.edbar,.pgbtn,.rmrow{display:none!important}
+  .amtin{border:none;background:none;padding:0}
+  tr.off{display:none}
+  body{background:#fff}
+  .panel,.kpi,.item,.tablecard,.find,.doccard{box-shadow:none;break-inside:avoid}
+  section.blk{break-inside:auto;margin-top:22px}
+  tr.exp{display:table-row!important}
+  .item .ev.clamp{-webkit-line-clamp:unset;display:block}
+  .item.hide{display:grid!important}
+}
+</style></head><body>
+
+<header class="appbar"><div class="wrap">
+  <div class="brand"><span class="mark">NTR</span>
+    <span>NTR Vaidya Seva<small>Claim audit &amp; documentation review</small></span></div>
+  <span class="spacer"></span><a class="btn" href="index.html" style="margin-right:4px">All claims</a><span class="cid">AP12054472</span><button class="btn" onclick="window.print()">Print / PDF</button>
+</div></header>
+<nav class="subnav"><div class="wrap">
+  <a href="#summary">Summary</a>
+  <a href="#compliance">Requirements<b id="navreq">10/21</b></a>
+  <a href="#money">Deduction flags<b id="navded">4</b></a>
+  <a href="#triggers">Rejection flags<b id="navrej">2</b></a>
+  
+  <a href="#documents">Documents<b>14</b></a>
+</div></nav>
+<main><div class="wrap">
+  <div id="summary" style="scroll-margin-top:132px"></div>
+  <div class="topstrip">
+  <div class="idcard">
+    <div class="f"><div class="k">Procedure code</div>
+      <div class="v soft" title="No procedure code is stated in this claim's documents">Not stated</div></div>
+    <div class="f"><div class="k">Procedure</div><div class="v">Cataract surgery</div></div>
+    <div class="f"><div class="k">Speciality</div><div class="v">Ophthalmology</div></div>
+    <div class="f"><div class="k">Claim ID</div><div class="v mono">AP12054472</div></div>
+  </div>
+  <div class="kpis">
+    <div class="kpi k-critical" id="kpireqcard"><div class="lab">Requirements failed</div>
+      <div class="val"><span id="kpigaps">11</span><small> / <span id="kpitot">21</span></small></div>
+      <div class="sub"><span id="kpiscore">48</span>% compliance</div></div>
+    <div class="kpi k-warning"><div class="lab">Total deduction</div><div class="val" id="kpiamt">₹ 4,000</div>
+      <div class="sub">4 rules considered</div></div>
+    <div class="kpi k-critical" id="kpirejcard"><div class="lab">Rejection flags</div>
+      <div class="val" id="kpirej">2</div><div class="sub">fraud / integrity rules hit</div></div>
+    <div class="kpi k-info"><div class="lab">Lower code</div>
+      <div class="val" id="kpicode" style="font-size:20px;padding-top:6px">None</div>
+      <div class="sub" id="kpicodesub">settle at the claimed code</div></div>
+  </div></div>
+  
+<section class="blk a-plain" id="compliance">
+  <div class="blkhead"><div class="right">
+  <div class="toolbar">
+    <button class="fbtn on" data-filter="all">All requirements<span class="c">21</span></button>
+    <button class="fbtn" data-filter="notmet">Not met<span class="c">11</span></button>
+    <button class="fbtn" data-filter="met">Met<span class="c">10</span></button>
+  </div></div>
+    <div class="right"><button class="abtn" data-bulk="req" data-on="1">Consider all</button>
+      <button class="abtn" data-bulk="req" data-on="0">Consider none</button></div></div>
+  <div class="blkbody">
+  <div class="tablecard"><div class="tscroll"><table>
+    <thead><tr><th class="ckcell">Consider</th><th style="width:200px">Category</th>
+      <th>Requirement</th><th style="width:120px">Status</th>
+      <th style="width:100px">Source</th></tr></thead>
+    <tbody>
+      <tr class="frow" data-flag="q1" data-state="notmet">
+        <td class="ckcell"><input class="cbx" type="checkbox" checked data-kind="req"
+            data-key="q1" aria-label="Consider this item"></td>
+        <td class="cat">Investigations &amp; reports</td>
+        <td class="rulecell">
+          <div class="rulehead">Ocular biometry report (A-scan and keratometry) is attached and its text/reported values are present.</div>
+          <div class="evline"><span class="lab">What the reviewer found</span>
+            <p class="ev">An A-scan section is present, but the K1, K2, AL, and A-constant result fields do not contain reported numeric values, and no keratometry values are documented.</p></div>
+          <div class="refs"><span class="reflab">Seen in</span><span class="chip" title="claims/AP12054472/1765043279686_ch s suvarnalal 5046cs.pdf"><svg viewBox="0 0 16 16" class="ic" aria-hidden="true"><path d="M4 1.5h5L12.5 5v9.5h-9z" fill="none" stroke="currentColor" stroke-width="1.3"/><path d="M9 1.5V5h3.5" fill="none" stroke="currentColor" stroke-width="1.3"/></svg><span class="fname">ch s suvarnalal 5046cs.pdf</span><span class="pgs"><a class="pgbtn" href="../NTR-Patients-Files/AP12054472/Clinical%20notes/1765043279686_ch%20s%20suvarnalal%205046cs.pdf#page=2" target="_blank" rel="noopener" data-name="1765043279686_ch s suvarnalal 5046cs.pdf" data-page="2" data-pages="2" data-url="../NTR-Patients-Files/AP12054472/Clinical%20notes/1765043279686_ch%20s%20suvarnalal%205046cs.pdf" title="Open page 2 of 1765043279686_ch s suvarnalal 5046cs.pdf"><svg viewBox="0 0 16 16" class="eye" aria-hidden="true"><path d="M1 8s2.6-4.2 7-4.2S15 8 15 8s-2.6 4.2-7 4.2S1 8 1 8z" fill="none" stroke="currentColor" stroke-width="1.3"/><circle cx="8" cy="8" r="1.9" fill="none" stroke="currentColor" stroke-width="1.3"/></svg>2</a></span></span></div>
+        </td>
+        <td><span class="pill critical"><span class="dot"></span>Not met</span></td>
+        <td><span class="tag t-llm" title="Found by reading the text of the submitted documents">Text</span></td>
+      </tr>
+      <tr class="frow" data-flag="q2" data-state="notmet">
+        <td class="ckcell"><input class="cbx" type="checkbox" checked data-kind="req"
+            data-key="q2" aria-label="Consider this item"></td>
+        <td class="cat">Investigations &amp; reports</td>
+        <td class="rulecell">
+          <div class="rulehead">The A-scan/B-scan biometry report&#x27;s textual/numeric readings are present and support the surgical indication.</div>
+          <div class="evline"><span class="lab">What the reviewer found</span>
+            <p class="ev">The extracted A-scan section contains only labels without readings, and no B-scan biometry readings are documented. Therefore, the text does not provide numeric support for the indication.</p></div>
+          <div class="refs"><span class="reflab">Seen in</span><span class="chip" title="claims/AP12054472/1765043279686_ch s suvarnalal 5046cs.pdf"><svg viewBox="0 0 16 16" class="ic" aria-hidden="true"><path d="M4 1.5h5L12.5 5v9.5h-9z" fill="none" stroke="currentColor" stroke-width="1.3"/><path d="M9 1.5V5h3.5" fill="none" stroke="currentColor" stroke-width="1.3"/></svg><span class="fname">ch s suvarnalal 5046cs.pdf</span><span class="pgs"><a class="pgbtn" href="../NTR-Patients-Files/AP12054472/Clinical%20notes/1765043279686_ch%20s%20suvarnalal%205046cs.pdf#page=2" target="_blank" rel="noopener" data-name="1765043279686_ch s suvarnalal 5046cs.pdf" data-page="2" data-pages="2" data-url="../NTR-Patients-Files/AP12054472/Clinical%20notes/1765043279686_ch%20s%20suvarnalal%205046cs.pdf" title="Open page 2 of 1765043279686_ch s suvarnalal 5046cs.pdf"><svg viewBox="0 0 16 16" class="eye" aria-hidden="true"><path d="M1 8s2.6-4.2 7-4.2S15 8 15 8s-2.6 4.2-7 4.2S1 8 1 8z" fill="none" stroke="currentColor" stroke-width="1.3"/><circle cx="8" cy="8" r="1.9" fill="none" stroke="currentColor" stroke-width="1.3"/></svg>2</a></span></span></div>
+        </td>
+        <td><span class="pill critical"><span class="dot"></span>Not met</span></td>
+        <td><span class="tag t-llm" title="Found by reading the text of the submitted documents">Text</span></td>
+      </tr>
+      <tr class="frow" data-flag="q3" data-state="notmet">
+        <td class="ckcell"><input class="cbx" type="checkbox" checked data-kind="req"
+            data-key="q3" aria-label="Consider this item"></td>
+        <td class="cat">Investigations &amp; reports</td>
+        <td class="rulecell">
+          <div class="rulehead">The post-treatment B-scan report&#x27;s textual findings are present.</div>
+          <div class="evline"><span class="lab">What the reviewer found</span>
+            <p class="ev">A post-treatment fundus/anterior-eye report is present, but it does not contain textual B-scan findings; its findings field is blank.</p></div>
+          <div class="refs"><span class="reflab">Seen in</span><span class="chip" title="claims/AP12054472/1770739117097_postfundus.jpeg"><svg viewBox="0 0 16 16" class="ic" aria-hidden="true"><path d="M4 1.5h5L12.5 5v9.5h-9z" fill="none" stroke="currentColor" stroke-width="1.3"/><path d="M9 1.5V5h3.5" fill="none" stroke="currentColor" stroke-width="1.3"/></svg><span class="fname">postfundus.jpeg</span><span class="pgs"><a class="pgbtn" href="../NTR-Patients-Files/AP12054472/Clinical%20notes/1770739117097_postfundus.jpeg" target="_blank" rel="noopener" data-name="1770739117097_postfundus.jpeg" data-page="1" data-pages="1" data-url="../NTR-Patients-Files/AP12054472/Clinical%20notes/1770739117097_postfundus.jpeg" title="Open 1770739117097_postfundus.jpeg"><svg viewBox="0 0 16 16" class="eye" aria-hidden="true"><path d="M1 8s2.6-4.2 7-4.2S15 8 15 8s-2.6 4.2-7 4.2S1 8 1 8z" fill="none" stroke="currentColor" stroke-width="1.3"/><circle cx="8" cy="8" r="1.9" fill="none" stroke="currentColor" stroke-width="1.3"/></svg>View</a></span></span></div>
+        </td>
+        <td><span class="pill critical"><span class="dot"></span>Not met</span></td>
+        <td><span class="tag t-llm" title="Found by reading the text of the submitted documents">Text</span></td>
+      </tr>
+      <tr class="frow" data-flag="q4" data-state="notmet">
+        <td class="ckcell"><input class="cbx" type="checkbox" checked data-kind="req"
+            data-key="q4" aria-label="Consider this item"></td>
+        <td class="cat">Investigations &amp; reports</td>
+        <td class="rulecell">
+          <div class="rulehead">A fundus photograph is attached as a pre-investigation report confirming the surgical indication.</div>
+          <div class="evline"><span class="lab">What the reviewer found</span>
+            <p class="ev">A patient-attributable fundus photograph is present, but the visible report date is 12-Nov-25, while the operation record visibly shows surgery on 7-Nov-25; it therefore cannot be visually confirmed as a pre-investigation report.</p></div>
+          <div class="refs"><span class="reflab">Seen in</span><span class="chip" title="1770739117097_postfundus.jpeg"><svg viewBox="0 0 16 16" class="ic" aria-hidden="true"><path d="M4 1.5h5L12.5 5v9.5h-9z" fill="none" stroke="currentColor" stroke-width="1.3"/><path d="M9 1.5V5h3.5" fill="none" stroke="currentColor" stroke-width="1.3"/></svg><span class="fname">postfundus.jpeg</span><span class="pgs"><a class="pgbtn" href="../NTR-Patients-Files/AP12054472/Clinical%20notes/1770739117097_postfundus.jpeg" target="_blank" rel="noopener" data-name="1770739117097_postfundus.jpeg" data-page="1" data-pages="1" data-url="../NTR-Patients-Files/AP12054472/Clinical%20notes/1770739117097_postfundus.jpeg" title="Open 1770739117097_postfundus.jpeg"><svg viewBox="0 0 16 16" class="eye" aria-hidden="true"><path d="M1 8s2.6-4.2 7-4.2S15 8 15 8s-2.6 4.2-7 4.2S1 8 1 8z" fill="none" stroke="currentColor" stroke-width="1.3"/><circle cx="8" cy="8" r="1.9" fill="none" stroke="currentColor" stroke-width="1.3"/></svg>View</a></span></span><span class="chip" title="1765043279686_ch s suvarnalal 5046cs.pdf"><svg viewBox="0 0 16 16" class="ic" aria-hidden="true"><path d="M4 1.5h5L12.5 5v9.5h-9z" fill="none" stroke="currentColor" stroke-width="1.3"/><path d="M9 1.5V5h3.5" fill="none" stroke="currentColor" stroke-width="1.3"/></svg><span class="fname">ch s suvarnalal 5046cs.pdf</span><span class="pgs"><a class="pgbtn" href="../NTR-Patients-Files/AP12054472/Clinical%20notes/1765043279686_ch%20s%20suvarnalal%205046cs.pdf#page=7" target="_blank" rel="noopener" data-name="1765043279686_ch s suvarnalal 5046cs.pdf" data-page="7" data-pages="7" data-url="../NTR-Patients-Files/AP12054472/Clinical%20notes/1765043279686_ch%20s%20suvarnalal%205046cs.pdf" title="Open page 7 of 1765043279686_ch s suvarnalal 5046cs.pdf"><svg viewBox="0 0 16 16" class="eye" aria-hidden="true"><path d="M1 8s2.6-4.2 7-4.2S15 8 15 8s-2.6 4.2-7 4.2S1 8 1 8z" fill="none" stroke="currentColor" stroke-width="1.3"/><circle cx="8" cy="8" r="1.9" fill="none" stroke="currentColor" stroke-width="1.3"/></svg>7</a></span></span></div>
+        </td>
+        <td><span class="pill critical"><span class="dot"></span>Not met</span></td>
+        <td><span class="tag t-vlm" title="Found by examining the submitted photographs and scans">Visual</span></td>
+      </tr>
+      <tr class="frow" data-flag="q5" data-state="notmet">
+        <td class="ckcell"><input class="cbx" type="checkbox" checked data-kind="req"
+            data-key="q5" aria-label="Consider this item"></td>
+        <td class="cat">Investigations &amp; reports</td>
+        <td class="rulecell">
+          <div class="rulehead">The A-scan/B-scan biometry printout/image is attached, attributable to the patient, and legible.</div>
+          <div class="evline"><span class="lab">What the reviewer found</span>
+            <p class="ev">An A-scan section is visible on the admission record and is associated with the patient record, but the displayed biometry fields/values are too faint and unclear to be considered legible.</p></div>
+          <div class="refs"><span class="reflab">Seen in</span><span class="chip" title="1765043279686_ch s suvarnalal 5046cs.pdf"><svg viewBox="0 0 16 16" class="ic" aria-hidden="true"><path d="M4 1.5h5L12.5 5v9.5h-9z" fill="none" stroke="currentColor" stroke-width="1.3"/><path d="M9 1.5V5h3.5" fill="none" stroke="currentColor" stroke-width="1.3"/></svg><span class="fname">ch s suvarnalal 5046cs.pdf</span><span class="pgs"><a class="pgbtn" href="../NTR-Patients-Files/AP12054472/Clinical%20notes/1765043279686_ch%20s%20suvarnalal%205046cs.pdf#page=2" target="_blank" rel="noopener" data-name="1765043279686_ch s suvarnalal 5046cs.pdf" data-page="2" data-pages="2" data-url="../NTR-Patients-Files/AP12054472/Clinical%20notes/1765043279686_ch%20s%20suvarnalal%205046cs.pdf" title="Open page 2 of 1765043279686_ch s suvarnalal 5046cs.pdf"><svg viewBox="0 0 16 16" class="eye" aria-hidden="true"><path d="M1 8s2.6-4.2 7-4.2S15 8 15 8s-2.6 4.2-7 4.2S1 8 1 8z" fill="none" stroke="currentColor" stroke-width="1.3"/><circle cx="8" cy="8" r="1.9" fill="none" stroke="currentColor" stroke-width="1.3"/></svg>2</a></span></span></div>
+        </td>
+        <td><span class="pill critical"><span class="dot"></span>Not met</span></td>
+        <td><span class="tag t-vlm" title="Found by examining the submitted photographs and scans">Visual</span></td>
+      </tr>
+      <tr class="frow" data-flag="q6" data-state="notmet">
+        <td class="ckcell"><input class="cbx" type="checkbox" checked data-kind="req"
+            data-key="q6" aria-label="Consider this item"></td>
+        <td class="cat">Investigations &amp; reports</td>
+        <td class="rulecell">
+          <div class="rulehead">The post-treatment B-scan image/printout is attached and legible.</div>
+          <div class="evline"><span class="lab">What the reviewer found</span>
+            <p class="ev">No post-treatment B-scan image or B-scan printout is visible in the supplied image set.</p></div>
+          
+        </td>
+        <td><span class="pill critical"><span class="dot"></span>Not met</span></td>
+        <td><span class="tag t-vlm" title="Found by examining the submitted photographs and scans">Visual</span></td>
+      </tr>
+      <tr class="frow" data-flag="q7" data-state="met">
+        <td class="ckcell"><input class="cbx" type="checkbox" checked data-kind="req"
+            data-key="q7" aria-label="Consider this item"></td>
+        <td class="cat">Investigations &amp; reports</td>
+        <td class="rulecell">
+          <div class="rulehead">A post-treatment clinical photo and fundus photo are attached.</div>
+          <div class="evline"><span class="lab">What the reviewer found</span>
+            <p class="ev">A clear post-treatment clinical eye photograph and a fundus photograph with patient name/ID are both attached.</p></div>
+          <div class="refs"><span class="reflab">Seen in</span><span class="chip" title="1770739125911_post clinical pic.jpeg"><svg viewBox="0 0 16 16" class="ic" aria-hidden="true"><path d="M4 1.5h5L12.5 5v9.5h-9z" fill="none" stroke="currentColor" stroke-width="1.3"/><path d="M9 1.5V5h3.5" fill="none" stroke="currentColor" stroke-width="1.3"/></svg><span class="fname">post clinical pic.jpeg</span><span class="pgs"><a class="pgbtn" href="../NTR-Patients-Files/AP12054472/Clinical%20notes/1770739125911_post%20clinical%20pic.jpeg" target="_blank" rel="noopener" data-name="1770739125911_post clinical pic.jpeg" data-page="1" data-pages="1" data-url="../NTR-Patients-Files/AP12054472/Clinical%20notes/1770739125911_post%20clinical%20pic.jpeg" title="Open 1770739125911_post clinical pic.jpeg"><svg viewBox="0 0 16 16" class="eye" aria-hidden="true"><path d="M1 8s2.6-4.2 7-4.2S15 8 15 8s-2.6 4.2-7 4.2S1 8 1 8z" fill="none" stroke="currentColor" stroke-width="1.3"/><circle cx="8" cy="8" r="1.9" fill="none" stroke="currentColor" stroke-width="1.3"/></svg>View</a></span></span><span class="chip" title="1770739117097_postfundus.jpeg"><svg viewBox="0 0 16 16" class="ic" aria-hidden="true"><path d="M4 1.5h5L12.5 5v9.5h-9z" fill="none" stroke="currentColor" stroke-width="1.3"/><path d="M9 1.5V5h3.5" fill="none" stroke="currentColor" stroke-width="1.3"/></svg><span class="fname">postfundus.jpeg</span><span class="pgs"><a class="pgbtn" href="../NTR-Patients-Files/AP12054472/Clinical%20notes/1770739117097_postfundus.jpeg" target="_blank" rel="noopener" data-name="1770739117097_postfundus.jpeg" data-page="1" data-pages="1" data-url="../NTR-Patients-Files/AP12054472/Clinical%20notes/1770739117097_postfundus.jpeg" title="Open 1770739117097_postfundus.jpeg"><svg viewBox="0 0 16 16" class="eye" aria-hidden="true"><path d="M1 8s2.6-4.2 7-4.2S15 8 15 8s-2.6 4.2-7 4.2S1 8 1 8z" fill="none" stroke="currentColor" stroke-width="1.3"/><circle cx="8" cy="8" r="1.9" fill="none" stroke="currentColor" stroke-width="1.3"/></svg>View</a></span></span></div>
+        </td>
+        <td><span class="pill good"><span class="dot"></span>Met</span></td>
+        <td><span class="tag t-vlm" title="Found by examining the submitted photographs and scans">Visual</span></td>
+      </tr>
+      <tr class="frow" data-flag="q8" data-state="notmet">
+        <td class="ckcell"><input class="cbx" type="checkbox" checked data-kind="req"
+            data-key="q8" aria-label="Consider this item"></td>
+        <td class="cat">Approvals &amp; procedure match</td>
+        <td class="rulecell">
+          <div class="rulehead">A Telephonic Intimation Details (TID) reference / Trust approval record exists and its timestamp is on or before the procedure/surgery/delivery start date-time recorded in the case sheet.</div>
+          <div class="evline"><span class="lab">What the reviewer found</span>
+            <p class="ev">No TID reference or Trust approval record with a timestamp is present in the submitted text.</p></div>
+          
+        </td>
+        <td><span class="pill critical"><span class="dot"></span>Not met</span></td>
+        <td><span class="tag t-llm" title="Found by reading the text of the submitted documents">Text</span></td>
+      </tr>
+      <tr class="frow" data-flag="q9" data-state="notmet">
+        <td class="ckcell"><input class="cbx" type="checkbox" checked data-kind="req"
+            data-key="q9" aria-label="Consider this item"></td>
+        <td class="cat">Billing &amp; package</td>
+        <td class="rulecell">
+          <div class="rulehead">The bill and admission/discharge dates confirm the procedure was billed as Day Care, with no unwarranted inpatient bed-day charges.</div>
+          <div class="evline"><span class="lab">What the reviewer found</span>
+            <p class="ev clamp">The submitted bill is explicitly an IN PATIENT BILL ABSTRACT and records admission from 01/11/2025 to discharge on 12/11/2025. The dates do not confirm Day Care billing and the bill contains no textual confirmation that inpatient bed-day charges were absent.</p><button class="more">Read more</button></div>
+          <div class="refs"><span class="reflab">Seen in</span><span class="chip" title="claims/AP12054472/1765043241734_5046 SAMUELSUVARNA LAL BIL.pdf"><svg viewBox="0 0 16 16" class="ic" aria-hidden="true"><path d="M4 1.5h5L12.5 5v9.5h-9z" fill="none" stroke="currentColor" stroke-width="1.3"/><path d="M9 1.5V5h3.5" fill="none" stroke="currentColor" stroke-width="1.3"/></svg><span class="fname">5046 SAMUELSUVARNA LAL BIL.pdf</span><span class="pgs"><a class="pgbtn" href="../NTR-Patients-Files/AP12054472/Clinical%20notes/1765043241734_5046%20SAMUELSUVARNA%20LAL%20BIL.pdf#page=1" target="_blank" rel="noopener" data-name="1765043241734_5046 SAMUELSUVARNA LAL BIL.pdf" data-page="1" data-pages="1" data-url="../NTR-Patients-Files/AP12054472/Clinical%20notes/1765043241734_5046%20SAMUELSUVARNA%20LAL%20BIL.pdf" title="Open page 1 of 1765043241734_5046 SAMUELSUVARNA LAL BIL.pdf"><svg viewBox="0 0 16 16" class="eye" aria-hidden="true"><path d="M1 8s2.6-4.2 7-4.2S15 8 15 8s-2.6 4.2-7 4.2S1 8 1 8z" fill="none" stroke="currentColor" stroke-width="1.3"/><circle cx="8" cy="8" r="1.9" fill="none" stroke="currentColor" stroke-width="1.3"/></svg>1</a></span></span><span class="chip" title="claims/AP12054472/1763213717265_DIS SUM.jpeg"><svg viewBox="0 0 16 16" class="ic" aria-hidden="true"><path d="M4 1.5h5L12.5 5v9.5h-9z" fill="none" stroke="currentColor" stroke-width="1.3"/><path d="M9 1.5V5h3.5" fill="none" stroke="currentColor" stroke-width="1.3"/></svg><span class="fname">DIS SUM.jpeg</span><span class="pgs"><a class="pgbtn" href="../NTR-Patients-Files/AP12054472/Clinical%20notes/1763213717265_DIS%20SUM.jpeg" target="_blank" rel="noopener" data-name="1763213717265_DIS SUM.jpeg" data-page="1" data-pages="1" data-url="../NTR-Patients-Files/AP12054472/Clinical%20notes/1763213717265_DIS%20SUM.jpeg" title="Open 1763213717265_DIS SUM.jpeg"><svg viewBox="0 0 16 16" class="eye" aria-hidden="true"><path d="M1 8s2.6-4.2 7-4.2S15 8 15 8s-2.6 4.2-7 4.2S1 8 1 8z" fill="none" stroke="currentColor" stroke-width="1.3"/><circle cx="8" cy="8" r="1.9" fill="none" stroke="currentColor" stroke-width="1.3"/></svg>View</a></span></span></div>
+        </td>
+        <td><span class="pill critical"><span class="dot"></span>Not met</span></td>
+        <td><span class="tag t-llm" title="Found by reading the text of the submitted documents">Text</span></td>
+      </tr>
+      <tr class="frow" data-flag="q10" data-state="met">
+        <td class="ckcell"><input class="cbx" type="checkbox" checked data-kind="req"
+            data-key="q10" aria-label="Consider this item"></td>
+        <td class="cat">Billing &amp; package</td>
+        <td class="rulecell">
+          <div class="rulehead">A final consolidated bill is attached and its total matches the sum of the itemised bill line items.</div>
+          <div class="evline"><span class="lab">What the reviewer found</span>
+            <p class="ev">The bill lists one item for Rs. 8,157.00 and shows a grand total of Rs. 8,157.00, which matches the itemised amount.</p></div>
+          <div class="refs"><span class="reflab">Seen in</span><span class="chip" title="claims/AP12054472/1765043241734_5046 SAMUELSUVARNA LAL BIL.pdf"><svg viewBox="0 0 16 16" class="ic" aria-hidden="true"><path d="M4 1.5h5L12.5 5v9.5h-9z" fill="none" stroke="currentColor" stroke-width="1.3"/><path d="M9 1.5V5h3.5" fill="none" stroke="currentColor" stroke-width="1.3"/></svg><span class="fname">5046 SAMUELSUVARNA LAL BIL.pdf</span><span class="pgs"><a class="pgbtn" href="../NTR-Patients-Files/AP12054472/Clinical%20notes/1765043241734_5046%20SAMUELSUVARNA%20LAL%20BIL.pdf#page=1" target="_blank" rel="noopener" data-name="1765043241734_5046 SAMUELSUVARNA LAL BIL.pdf" data-page="1" data-pages="1" data-url="../NTR-Patients-Files/AP12054472/Clinical%20notes/1765043241734_5046%20SAMUELSUVARNA%20LAL%20BIL.pdf" title="Open page 1 of 1765043241734_5046 SAMUELSUVARNA LAL BIL.pdf"><svg viewBox="0 0 16 16" class="eye" aria-hidden="true"><path d="M1 8s2.6-4.2 7-4.2S15 8 15 8s-2.6 4.2-7 4.2S1 8 1 8z" fill="none" stroke="currentColor" stroke-width="1.3"/><circle cx="8" cy="8" r="1.9" fill="none" stroke="currentColor" stroke-width="1.3"/></svg>1</a></span></span></div>
+        </td>
+        <td><span class="pill good"><span class="dot"></span>Met</span></td>
+        <td><span class="tag t-llm" title="Found by reading the text of the submitted documents">Text</span></td>
+      </tr>
+      <tr class="frow" data-flag="q11" data-state="notmet">
+        <td class="ckcell"><input class="cbx" type="checkbox" checked data-kind="req"
+            data-key="q11" aria-label="Consider this item"></td>
+        <td class="cat">Clinical notes &amp; summaries</td>
+        <td class="rulecell">
+          <div class="rulehead">Where the patient&#x27;s history/comorbidities clinically warrant it, a Pre-Anaesthetic Check-up (PAC) / Cardiologist fitness opinion document is attached and its text confirms fitness.</div>
+          <div class="evline"><span class="lab">What the reviewer found</span>
+            <p class="ev">A PAC form is attached and records normal ECG, heart sounds, and lungs, but the extracted text does not unambiguously document a selected or explicit fitness confirmation; the opinion options remain ambiguous.</p></div>
+          <div class="refs"><span class="reflab">Seen in</span><span class="chip" title="claims/AP12054472/1765043279686_ch s suvarnalal 5046cs.pdf"><svg viewBox="0 0 16 16" class="ic" aria-hidden="true"><path d="M4 1.5h5L12.5 5v9.5h-9z" fill="none" stroke="currentColor" stroke-width="1.3"/><path d="M9 1.5V5h3.5" fill="none" stroke="currentColor" stroke-width="1.3"/></svg><span class="fname">ch s suvarnalal 5046cs.pdf</span><span class="pgs"><a class="pgbtn" href="../NTR-Patients-Files/AP12054472/Clinical%20notes/1765043279686_ch%20s%20suvarnalal%205046cs.pdf#page=5" target="_blank" rel="noopener" data-name="1765043279686_ch s suvarnalal 5046cs.pdf" data-page="5" data-pages="5" data-url="../NTR-Patients-Files/AP12054472/Clinical%20notes/1765043279686_ch%20s%20suvarnalal%205046cs.pdf" title="Open page 5 of 1765043279686_ch s suvarnalal 5046cs.pdf"><svg viewBox="0 0 16 16" class="eye" aria-hidden="true"><path d="M1 8s2.6-4.2 7-4.2S15 8 15 8s-2.6 4.2-7 4.2S1 8 1 8z" fill="none" stroke="currentColor" stroke-width="1.3"/><circle cx="8" cy="8" r="1.9" fill="none" stroke="currentColor" stroke-width="1.3"/></svg>5</a></span></span></div>
+        </td>
+        <td><span class="pill critical"><span class="dot"></span>Not met</span></td>
+        <td><span class="tag t-llm" title="Found by reading the text of the submitted documents">Text</span></td>
+      </tr>
+      <tr class="frow" data-flag="q12" data-state="met">
+        <td class="ckcell"><input class="cbx" type="checkbox" checked data-kind="req"
+            data-key="q12" aria-label="Consider this item"></td>
+        <td class="cat">Clinical notes &amp; summaries</td>
+        <td class="rulecell">
+          <div class="rulehead">Clinical notes are attached and their text documents visual impairment with a Best Corrected Visual Acuity (BCVA) value for the cataract-affected eye.</div>
+          <div class="evline"><span class="lab">What the reviewer found</span>
+            <p class="ev">The post-operative form documents left-eye cataract and pre-operative vision of CF 2mly, indicating visual impairment for the affected eye.</p></div>
+          <div class="refs"><span class="reflab">Seen in</span><span class="chip" title="claims/AP12054472/1765043279686_ch s suvarnalal 5046cs.pdf"><svg viewBox="0 0 16 16" class="ic" aria-hidden="true"><path d="M4 1.5h5L12.5 5v9.5h-9z" fill="none" stroke="currentColor" stroke-width="1.3"/><path d="M9 1.5V5h3.5" fill="none" stroke="currentColor" stroke-width="1.3"/></svg><span class="fname">ch s suvarnalal 5046cs.pdf</span><span class="pgs"><a class="pgbtn" href="../NTR-Patients-Files/AP12054472/Clinical%20notes/1765043279686_ch%20s%20suvarnalal%205046cs.pdf#page=10" target="_blank" rel="noopener" data-name="1765043279686_ch s suvarnalal 5046cs.pdf" data-page="10" data-pages="10" data-url="../NTR-Patients-Files/AP12054472/Clinical%20notes/1765043279686_ch%20s%20suvarnalal%205046cs.pdf" title="Open page 10 of 1765043279686_ch s suvarnalal 5046cs.pdf"><svg viewBox="0 0 16 16" class="eye" aria-hidden="true"><path d="M1 8s2.6-4.2 7-4.2S15 8 15 8s-2.6 4.2-7 4.2S1 8 1 8z" fill="none" stroke="currentColor" stroke-width="1.3"/><circle cx="8" cy="8" r="1.9" fill="none" stroke="currentColor" stroke-width="1.3"/></svg>10</a></span></span></div>
+        </td>
+        <td><span class="pill good"><span class="dot"></span>Met</span></td>
+        <td><span class="tag t-llm" title="Found by reading the text of the submitted documents">Text</span></td>
+      </tr>
+      <tr class="frow" data-flag="q13" data-state="met">
+        <td class="ckcell"><input class="cbx" type="checkbox" checked data-kind="req"
+            data-key="q13" aria-label="Consider this item"></td>
+        <td class="cat">Clinical notes &amp; summaries</td>
+        <td class="rulecell">
+          <div class="rulehead">A detailed discharge summary is attached with treatment course documented in text.</div>
+          <div class="evline"><span class="lab">What the reviewer found</span>
+            <p class="ev">The discharge summary documents admission, surgery, discharge, diagnosis, stable status, discharge medications, diet, instructions, and follow-up.</p></div>
+          <div class="refs"><span class="reflab">Seen in</span><span class="chip" title="claims/AP12054472/1763213717265_DIS SUM.jpeg"><svg viewBox="0 0 16 16" class="ic" aria-hidden="true"><path d="M4 1.5h5L12.5 5v9.5h-9z" fill="none" stroke="currentColor" stroke-width="1.3"/><path d="M9 1.5V5h3.5" fill="none" stroke="currentColor" stroke-width="1.3"/></svg><span class="fname">DIS SUM.jpeg</span><span class="pgs"><a class="pgbtn" href="../NTR-Patients-Files/AP12054472/Clinical%20notes/1763213717265_DIS%20SUM.jpeg" target="_blank" rel="noopener" data-name="1763213717265_DIS SUM.jpeg" data-page="1" data-pages="1" data-url="../NTR-Patients-Files/AP12054472/Clinical%20notes/1763213717265_DIS%20SUM.jpeg" title="Open 1763213717265_DIS SUM.jpeg"><svg viewBox="0 0 16 16" class="eye" aria-hidden="true"><path d="M1 8s2.6-4.2 7-4.2S15 8 15 8s-2.6 4.2-7 4.2S1 8 1 8z" fill="none" stroke="currentColor" stroke-width="1.3"/><circle cx="8" cy="8" r="1.9" fill="none" stroke="currentColor" stroke-width="1.3"/></svg>View</a></span></span><span class="chip" title="claims/AP12054472/1765043279686_ch s suvarnalal 5046cs.pdf"><svg viewBox="0 0 16 16" class="ic" aria-hidden="true"><path d="M4 1.5h5L12.5 5v9.5h-9z" fill="none" stroke="currentColor" stroke-width="1.3"/><path d="M9 1.5V5h3.5" fill="none" stroke="currentColor" stroke-width="1.3"/></svg><span class="fname">ch s suvarnalal 5046cs.pdf</span><span class="pgs"><a class="pgbtn" href="../NTR-Patients-Files/AP12054472/Clinical%20notes/1765043279686_ch%20s%20suvarnalal%205046cs.pdf#page=8" target="_blank" rel="noopener" data-name="1765043279686_ch s suvarnalal 5046cs.pdf" data-page="8" data-pages="8,9" data-url="../NTR-Patients-Files/AP12054472/Clinical%20notes/1765043279686_ch%20s%20suvarnalal%205046cs.pdf" title="Open page 8 of 1765043279686_ch s suvarnalal 5046cs.pdf"><svg viewBox="0 0 16 16" class="eye" aria-hidden="true"><path d="M1 8s2.6-4.2 7-4.2S15 8 15 8s-2.6 4.2-7 4.2S1 8 1 8z" fill="none" stroke="currentColor" stroke-width="1.3"/><circle cx="8" cy="8" r="1.9" fill="none" stroke="currentColor" stroke-width="1.3"/></svg>8</a><a class="pgbtn" href="../NTR-Patients-Files/AP12054472/Clinical%20notes/1765043279686_ch%20s%20suvarnalal%205046cs.pdf#page=9" target="_blank" rel="noopener" data-name="1765043279686_ch s suvarnalal 5046cs.pdf" data-page="9" data-pages="8,9" data-url="../NTR-Patients-Files/AP12054472/Clinical%20notes/1765043279686_ch%20s%20suvarnalal%205046cs.pdf" title="Open page 9 of 1765043279686_ch s suvarnalal 5046cs.pdf"><svg viewBox="0 0 16 16" class="eye" aria-hidden="true"><path d="M1 8s2.6-4.2 7-4.2S15 8 15 8s-2.6 4.2-7 4.2S1 8 1 8z" fill="none" stroke="currentColor" stroke-width="1.3"/><circle cx="8" cy="8" r="1.9" fill="none" stroke="currentColor" stroke-width="1.3"/></svg>9</a></span></span></div>
+        </td>
+        <td><span class="pill good"><span class="dot"></span>Met</span></td>
+        <td><span class="tag t-llm" title="Found by reading the text of the submitted documents">Text</span></td>
+      </tr>
+      <tr class="frow" data-flag="q14" data-state="met">
+        <td class="ckcell"><input class="cbx" type="checkbox" checked data-kind="req"
+            data-key="q14" aria-label="Consider this item"></td>
+        <td class="cat">Clinical notes &amp; summaries</td>
+        <td class="rulecell">
+          <div class="rulehead">Operative notes text is attached and documents the procedure performed.</div>
+          <div class="evline"><span class="lab">What the reviewer found</span>
+            <p class="ev">The operation record documents left-eye cataract extraction surgery with phaco and foldable IOL, with operation date 7/11/25.</p></div>
+          <div class="refs"><span class="reflab">Seen in</span><span class="chip" title="claims/AP12054472/1765043279686_ch s suvarnalal 5046cs.pdf"><svg viewBox="0 0 16 16" class="ic" aria-hidden="true"><path d="M4 1.5h5L12.5 5v9.5h-9z" fill="none" stroke="currentColor" stroke-width="1.3"/><path d="M9 1.5V5h3.5" fill="none" stroke="currentColor" stroke-width="1.3"/></svg><span class="fname">ch s suvarnalal 5046cs.pdf</span><span class="pgs"><a class="pgbtn" href="../NTR-Patients-Files/AP12054472/Clinical%20notes/1765043279686_ch%20s%20suvarnalal%205046cs.pdf#page=7" target="_blank" rel="noopener" data-name="1765043279686_ch s suvarnalal 5046cs.pdf" data-page="7" data-pages="7" data-url="../NTR-Patients-Files/AP12054472/Clinical%20notes/1765043279686_ch%20s%20suvarnalal%205046cs.pdf" title="Open page 7 of 1765043279686_ch s suvarnalal 5046cs.pdf"><svg viewBox="0 0 16 16" class="eye" aria-hidden="true"><path d="M1 8s2.6-4.2 7-4.2S15 8 15 8s-2.6 4.2-7 4.2S1 8 1 8z" fill="none" stroke="currentColor" stroke-width="1.3"/><circle cx="8" cy="8" r="1.9" fill="none" stroke="currentColor" stroke-width="1.3"/></svg>7</a></span></span></div>
+        </td>
+        <td><span class="pill good"><span class="dot"></span>Met</span></td>
+        <td><span class="tag t-llm" title="Found by reading the text of the submitted documents">Text</span></td>
+      </tr>
+      <tr class="frow" data-flag="q15" data-state="notmet">
+        <td class="ckcell"><input class="cbx" type="checkbox" checked data-kind="req"
+            data-key="q15" aria-label="Consider this item"></td>
+        <td class="cat">Drugs, implants &amp; consumables</td>
+        <td class="rulecell">
+          <div class="rulehead">A photograph of the IOL barcode, a photo/video-still showing the phaco probe in use on the eye, and a still image of the procedure bearing the patient&#x27;s ID and date are all attached.</div>
+          <div class="evline"><span class="lab">What the reviewer found</span>
+            <p class="ev clamp">Multiple intra-operative photographs show an instrument/phaco probe in use on the eye, and GPS overlays show a procedure date/time; however, no IOL barcode photograph is visible and the procedure stills do not visibly bear the patient&#x27;s ID. All three required components are therefore not present.</p><button class="more">Read more</button></div>
+          <div class="refs"><span class="reflab">Seen in</span><span class="chip" title="1770739017573_INTRAOP04.jpeg"><svg viewBox="0 0 16 16" class="ic" aria-hidden="true"><path d="M4 1.5h5L12.5 5v9.5h-9z" fill="none" stroke="currentColor" stroke-width="1.3"/><path d="M9 1.5V5h3.5" fill="none" stroke="currentColor" stroke-width="1.3"/></svg><span class="fname">INTRAOP04.jpeg</span><span class="pgs"><a class="pgbtn" href="../NTR-Patients-Files/AP12054472/Clinical%20notes/1770739017573_INTRAOP04.jpeg" target="_blank" rel="noopener" data-name="1770739017573_INTRAOP04.jpeg" data-page="1" data-pages="1" data-url="../NTR-Patients-Files/AP12054472/Clinical%20notes/1770739017573_INTRAOP04.jpeg" title="Open 1770739017573_INTRAOP04.jpeg"><svg viewBox="0 0 16 16" class="eye" aria-hidden="true"><path d="M1 8s2.6-4.2 7-4.2S15 8 15 8s-2.6 4.2-7 4.2S1 8 1 8z" fill="none" stroke="currentColor" stroke-width="1.3"/><circle cx="8" cy="8" r="1.9" fill="none" stroke="currentColor" stroke-width="1.3"/></svg>View</a></span></span><span class="chip" title="1770739017579_INTRAOP05.jpeg"><svg viewBox="0 0 16 16" class="ic" aria-hidden="true"><path d="M4 1.5h5L12.5 5v9.5h-9z" fill="none" stroke="currentColor" stroke-width="1.3"/><path d="M9 1.5V5h3.5" fill="none" stroke="currentColor" stroke-width="1.3"/></svg><span class="fname">INTRAOP05.jpeg</span><span class="pgs"><a class="pgbtn" href="../NTR-Patients-Files/AP12054472/Clinical%20notes/1770739017579_INTRAOP05.jpeg" target="_blank" rel="noopener" data-name="1770739017579_INTRAOP05.jpeg" data-page="1" data-pages="1" data-url="../NTR-Patients-Files/AP12054472/Clinical%20notes/1770739017579_INTRAOP05.jpeg" title="Open 1770739017579_INTRAOP05.jpeg"><svg viewBox="0 0 16 16" class="eye" aria-hidden="true"><path d="M1 8s2.6-4.2 7-4.2S15 8 15 8s-2.6 4.2-7 4.2S1 8 1 8z" fill="none" stroke="currentColor" stroke-width="1.3"/><circle cx="8" cy="8" r="1.9" fill="none" stroke="currentColor" stroke-width="1.3"/></svg>View</a></span></span><span class="chip" title="1770739037948_INTRAOP07.jpeg"><svg viewBox="0 0 16 16" class="ic" aria-hidden="true"><path d="M4 1.5h5L12.5 5v9.5h-9z" fill="none" stroke="currentColor" stroke-width="1.3"/><path d="M9 1.5V5h3.5" fill="none" stroke="currentColor" stroke-width="1.3"/></svg><span class="fname">INTRAOP07.jpeg</span><span class="pgs"><a class="pgbtn" href="../NTR-Patients-Files/AP12054472/Clinical%20notes/1770739037948_INTRAOP07.jpeg" target="_blank" rel="noopener" data-name="1770739037948_INTRAOP07.jpeg" data-page="1" data-pages="1" data-url="../NTR-Patients-Files/AP12054472/Clinical%20notes/1770739037948_INTRAOP07.jpeg" title="Open 1770739037948_INTRAOP07.jpeg"><svg viewBox="0 0 16 16" class="eye" aria-hidden="true"><path d="M1 8s2.6-4.2 7-4.2S15 8 15 8s-2.6 4.2-7 4.2S1 8 1 8z" fill="none" stroke="currentColor" stroke-width="1.3"/><circle cx="8" cy="8" r="1.9" fill="none" stroke="currentColor" stroke-width="1.3"/></svg>View</a></span></span></div>
+        </td>
+        <td><span class="pill critical"><span class="dot"></span>Not met</span></td>
+        <td><span class="tag t-vlm" title="Found by examining the submitted photographs and scans">Visual</span></td>
+      </tr>
+      <tr class="frow" data-flag="q16" data-state="notmet">
+        <td class="ckcell"><input class="cbx" type="checkbox" checked data-kind="req"
+            data-key="q16" aria-label="Consider this item"></td>
+        <td class="cat">Identity &amp; case sheet</td>
+        <td class="rulecell">
+          <div class="rulehead">Case sheet content is complete (all required sections filled) and the patient identity (name / ID / age-sex) and procedure/diagnosis stated in the case sheet textually match the procedure being claimed.</div>
+          <div class="evline"><span class="lab">What the reviewer found</span>
+            <p class="ev clamp">The case sheet contains multiple incomplete or blank sections and inconsistent patient details: names vary, ages are recorded as 64 and 67, and the case sheet identity differs from the claim/discharge identity of Chebrolu Samuel Suvarna Lal. The left-eye cataract and phaco with foldable IOL procedure are otherwise stated.</p><button class="more">Read more</button></div>
+          <div class="refs"><span class="reflab">Seen in</span><span class="chip" title="claims/AP12054472/1765043279686_ch s suvarnalal 5046cs.pdf"><svg viewBox="0 0 16 16" class="ic" aria-hidden="true"><path d="M4 1.5h5L12.5 5v9.5h-9z" fill="none" stroke="currentColor" stroke-width="1.3"/><path d="M9 1.5V5h3.5" fill="none" stroke="currentColor" stroke-width="1.3"/></svg><span class="fname">ch s suvarnalal 5046cs.pdf</span><span class="pgs"><a class="pgbtn" href="../NTR-Patients-Files/AP12054472/Clinical%20notes/1765043279686_ch%20s%20suvarnalal%205046cs.pdf#page=1" target="_blank" rel="noopener" data-name="1765043279686_ch s suvarnalal 5046cs.pdf" data-page="1" data-pages="1,2,4,5,6,7" data-url="../NTR-Patients-Files/AP12054472/Clinical%20notes/1765043279686_ch%20s%20suvarnalal%205046cs.pdf" title="Open page 1 of 1765043279686_ch s suvarnalal 5046cs.pdf"><svg viewBox="0 0 16 16" class="eye" aria-hidden="true"><path d="M1 8s2.6-4.2 7-4.2S15 8 15 8s-2.6 4.2-7 4.2S1 8 1 8z" fill="none" stroke="currentColor" stroke-width="1.3"/><circle cx="8" cy="8" r="1.9" fill="none" stroke="currentColor" stroke-width="1.3"/></svg>1</a><a class="pgbtn" href="../NTR-Patients-Files/AP12054472/Clinical%20notes/1765043279686_ch%20s%20suvarnalal%205046cs.pdf#page=2" target="_blank" rel="noopener" data-name="1765043279686_ch s suvarnalal 5046cs.pdf" data-page="2" data-pages="1,2,4,5,6,7" data-url="../NTR-Patients-Files/AP12054472/Clinical%20notes/1765043279686_ch%20s%20suvarnalal%205046cs.pdf" title="Open page 2 of 1765043279686_ch s suvarnalal 5046cs.pdf"><svg viewBox="0 0 16 16" class="eye" aria-hidden="true"><path d="M1 8s2.6-4.2 7-4.2S15 8 15 8s-2.6 4.2-7 4.2S1 8 1 8z" fill="none" stroke="currentColor" stroke-width="1.3"/><circle cx="8" cy="8" r="1.9" fill="none" stroke="currentColor" stroke-width="1.3"/></svg>2</a><a class="pgbtn" href="../NTR-Patients-Files/AP12054472/Clinical%20notes/1765043279686_ch%20s%20suvarnalal%205046cs.pdf#page=4" target="_blank" rel="noopener" data-name="1765043279686_ch s suvarnalal 5046cs.pdf" data-page="4" data-pages="1,2,4,5,6,7" data-url="../NTR-Patients-Files/AP12054472/Clinical%20notes/1765043279686_ch%20s%20suvarnalal%205046cs.pdf" title="Open page 4 of 1765043279686_ch s suvarnalal 5046cs.pdf"><svg viewBox="0 0 16 16" class="eye" aria-hidden="true"><path d="M1 8s2.6-4.2 7-4.2S15 8 15 8s-2.6 4.2-7 4.2S1 8 1 8z" fill="none" stroke="currentColor" stroke-width="1.3"/><circle cx="8" cy="8" r="1.9" fill="none" stroke="currentColor" stroke-width="1.3"/></svg>4</a><a class="pgbtn" href="../NTR-Patients-Files/AP12054472/Clinical%20notes/1765043279686_ch%20s%20suvarnalal%205046cs.pdf#page=5" target="_blank" rel="noopener" data-name="1765043279686_ch s suvarnalal 5046cs.pdf" data-page="5" data-pages="1,2,4,5,6,7" data-url="../NTR-Patients-Files/AP12054472/Clinical%20notes/1765043279686_ch%20s%20suvarnalal%205046cs.pdf" title="Open page 5 of 1765043279686_ch s suvarnalal 5046cs.pdf"><svg viewBox="0 0 16 16" class="eye" aria-hidden="true"><path d="M1 8s2.6-4.2 7-4.2S15 8 15 8s-2.6 4.2-7 4.2S1 8 1 8z" fill="none" stroke="currentColor" stroke-width="1.3"/><circle cx="8" cy="8" r="1.9" fill="none" stroke="currentColor" stroke-width="1.3"/></svg>5</a><a class="pgbtn" href="../NTR-Patients-Files/AP12054472/Clinical%20notes/1765043279686_ch%20s%20suvarnalal%205046cs.pdf#page=6" target="_blank" rel="noopener" data-name="1765043279686_ch s suvarnalal 5046cs.pdf" data-page="6" data-pages="1,2,4,5,6,7" data-url="../NTR-Patients-Files/AP12054472/Clinical%20notes/1765043279686_ch%20s%20suvarnalal%205046cs.pdf" title="Open page 6 of 1765043279686_ch s suvarnalal 5046cs.pdf"><svg viewBox="0 0 16 16" class="eye" aria-hidden="true"><path d="M1 8s2.6-4.2 7-4.2S15 8 15 8s-2.6 4.2-7 4.2S1 8 1 8z" fill="none" stroke="currentColor" stroke-width="1.3"/><circle cx="8" cy="8" r="1.9" fill="none" stroke="currentColor" stroke-width="1.3"/></svg>6</a><a class="pgbtn" href="../NTR-Patients-Files/AP12054472/Clinical%20notes/1765043279686_ch%20s%20suvarnalal%205046cs.pdf#page=7" target="_blank" rel="noopener" data-name="1765043279686_ch s suvarnalal 5046cs.pdf" data-page="7" data-pages="1,2,4,5,6,7" data-url="../NTR-Patients-Files/AP12054472/Clinical%20notes/1765043279686_ch%20s%20suvarnalal%205046cs.pdf" title="Open the remaining 1 cited pages of 1765043279686_ch s suvarnalal 5046cs.pdf"><svg viewBox="0 0 16 16" class="eye" aria-hidden="true"><path d="M1 8s2.6-4.2 7-4.2S15 8 15 8s-2.6 4.2-7 4.2S1 8 1 8z" fill="none" stroke="currentColor" stroke-width="1.3"/><circle cx="8" cy="8" r="1.9" fill="none" stroke="currentColor" stroke-width="1.3"/></svg>+1 more</a></span></span><span class="chip" title="claims/AP12054472/1763213717265_DIS SUM.jpeg"><svg viewBox="0 0 16 16" class="ic" aria-hidden="true"><path d="M4 1.5h5L12.5 5v9.5h-9z" fill="none" stroke="currentColor" stroke-width="1.3"/><path d="M9 1.5V5h3.5" fill="none" stroke="currentColor" stroke-width="1.3"/></svg><span class="fname">DIS SUM.jpeg</span><span class="pgs"><a class="pgbtn" href="../NTR-Patients-Files/AP12054472/Clinical%20notes/1763213717265_DIS%20SUM.jpeg" target="_blank" rel="noopener" data-name="1763213717265_DIS SUM.jpeg" data-page="1" data-pages="1" data-url="../NTR-Patients-Files/AP12054472/Clinical%20notes/1763213717265_DIS%20SUM.jpeg" title="Open 1763213717265_DIS SUM.jpeg"><svg viewBox="0 0 16 16" class="eye" aria-hidden="true"><path d="M1 8s2.6-4.2 7-4.2S15 8 15 8s-2.6 4.2-7 4.2S1 8 1 8z" fill="none" stroke="currentColor" stroke-width="1.3"/><circle cx="8" cy="8" r="1.9" fill="none" stroke="currentColor" stroke-width="1.3"/></svg>View</a></span></span></div>
+        </td>
+        <td><span class="pill critical"><span class="dot"></span>Not met</span></td>
+        <td><span class="tag t-llm" title="Found by reading the text of the submitted documents">Text</span></td>
+      </tr>
+      <tr class="frow" data-flag="q17" data-state="met">
+        <td class="ckcell"><input class="cbx" type="checkbox" checked data-kind="req"
+            data-key="q17" aria-label="Consider this item"></td>
+        <td class="cat">Identity &amp; case sheet</td>
+        <td class="rulecell">
+          <div class="rulehead">The scanned/photographed case-sheet pages are legible (in focus, fully framed, not cropped or overexposed) and any patient photo-ID visible on the case sheet visually matches the patient.</div>
+          <div class="evline"><span class="lab">What the reviewer found</span>
+            <p class="ev">The 10 case-sheet pages are generally in focus, framed, and readable; no patient photo-ID is visible on the case-sheet pages, so no visual mismatch is identified.</p></div>
+          <div class="refs"><span class="reflab">Seen in</span><span class="chip" title="1765043279686_ch s suvarnalal 5046cs.pdf"><svg viewBox="0 0 16 16" class="ic" aria-hidden="true"><path d="M4 1.5h5L12.5 5v9.5h-9z" fill="none" stroke="currentColor" stroke-width="1.3"/><path d="M9 1.5V5h3.5" fill="none" stroke="currentColor" stroke-width="1.3"/></svg><span class="fname">ch s suvarnalal 5046cs.pdf</span><span class="pgs"><a class="pgbtn" href="../NTR-Patients-Files/AP12054472/Clinical%20notes/1765043279686_ch%20s%20suvarnalal%205046cs.pdf#page=1" target="_blank" rel="noopener" data-name="1765043279686_ch s suvarnalal 5046cs.pdf" data-page="1" data-pages="1,2,3,4,5,6,7,8,9,10" data-url="../NTR-Patients-Files/AP12054472/Clinical%20notes/1765043279686_ch%20s%20suvarnalal%205046cs.pdf" title="Open page 1 of 1765043279686_ch s suvarnalal 5046cs.pdf"><svg viewBox="0 0 16 16" class="eye" aria-hidden="true"><path d="M1 8s2.6-4.2 7-4.2S15 8 15 8s-2.6 4.2-7 4.2S1 8 1 8z" fill="none" stroke="currentColor" stroke-width="1.3"/><circle cx="8" cy="8" r="1.9" fill="none" stroke="currentColor" stroke-width="1.3"/></svg>1</a><a class="pgbtn" href="../NTR-Patients-Files/AP12054472/Clinical%20notes/1765043279686_ch%20s%20suvarnalal%205046cs.pdf#page=2" target="_blank" rel="noopener" data-name="1765043279686_ch s suvarnalal 5046cs.pdf" data-page="2" data-pages="1,2,3,4,5,6,7,8,9,10" data-url="../NTR-Patients-Files/AP12054472/Clinical%20notes/1765043279686_ch%20s%20suvarnalal%205046cs.pdf" title="Open page 2 of 1765043279686_ch s suvarnalal 5046cs.pdf"><svg viewBox="0 0 16 16" class="eye" aria-hidden="true"><path d="M1 8s2.6-4.2 7-4.2S15 8 15 8s-2.6 4.2-7 4.2S1 8 1 8z" fill="none" stroke="currentColor" stroke-width="1.3"/><circle cx="8" cy="8" r="1.9" fill="none" stroke="currentColor" stroke-width="1.3"/></svg>2</a><a class="pgbtn" href="../NTR-Patients-Files/AP12054472/Clinical%20notes/1765043279686_ch%20s%20suvarnalal%205046cs.pdf#page=3" target="_blank" rel="noopener" data-name="1765043279686_ch s suvarnalal 5046cs.pdf" data-page="3" data-pages="1,2,3,4,5,6,7,8,9,10" data-url="../NTR-Patients-Files/AP12054472/Clinical%20notes/1765043279686_ch%20s%20suvarnalal%205046cs.pdf" title="Open page 3 of 1765043279686_ch s suvarnalal 5046cs.pdf"><svg viewBox="0 0 16 16" class="eye" aria-hidden="true"><path d="M1 8s2.6-4.2 7-4.2S15 8 15 8s-2.6 4.2-7 4.2S1 8 1 8z" fill="none" stroke="currentColor" stroke-width="1.3"/><circle cx="8" cy="8" r="1.9" fill="none" stroke="currentColor" stroke-width="1.3"/></svg>3</a><a class="pgbtn" href="../NTR-Patients-Files/AP12054472/Clinical%20notes/1765043279686_ch%20s%20suvarnalal%205046cs.pdf#page=4" target="_blank" rel="noopener" data-name="1765043279686_ch s suvarnalal 5046cs.pdf" data-page="4" data-pages="1,2,3,4,5,6,7,8,9,10" data-url="../NTR-Patients-Files/AP12054472/Clinical%20notes/1765043279686_ch%20s%20suvarnalal%205046cs.pdf" title="Open page 4 of 1765043279686_ch s suvarnalal 5046cs.pdf"><svg viewBox="0 0 16 16" class="eye" aria-hidden="true"><path d="M1 8s2.6-4.2 7-4.2S15 8 15 8s-2.6 4.2-7 4.2S1 8 1 8z" fill="none" stroke="currentColor" stroke-width="1.3"/><circle cx="8" cy="8" r="1.9" fill="none" stroke="currentColor" stroke-width="1.3"/></svg>4</a><a class="pgbtn" href="../NTR-Patients-Files/AP12054472/Clinical%20notes/1765043279686_ch%20s%20suvarnalal%205046cs.pdf#page=5" target="_blank" rel="noopener" data-name="1765043279686_ch s suvarnalal 5046cs.pdf" data-page="5" data-pages="1,2,3,4,5,6,7,8,9,10" data-url="../NTR-Patients-Files/AP12054472/Clinical%20notes/1765043279686_ch%20s%20suvarnalal%205046cs.pdf" title="Open page 5 of 1765043279686_ch s suvarnalal 5046cs.pdf"><svg viewBox="0 0 16 16" class="eye" aria-hidden="true"><path d="M1 8s2.6-4.2 7-4.2S15 8 15 8s-2.6 4.2-7 4.2S1 8 1 8z" fill="none" stroke="currentColor" stroke-width="1.3"/><circle cx="8" cy="8" r="1.9" fill="none" stroke="currentColor" stroke-width="1.3"/></svg>5</a><a class="pgbtn" href="../NTR-Patients-Files/AP12054472/Clinical%20notes/1765043279686_ch%20s%20suvarnalal%205046cs.pdf#page=6" target="_blank" rel="noopener" data-name="1765043279686_ch s suvarnalal 5046cs.pdf" data-page="6" data-pages="1,2,3,4,5,6,7,8,9,10" data-url="../NTR-Patients-Files/AP12054472/Clinical%20notes/1765043279686_ch%20s%20suvarnalal%205046cs.pdf" title="Open the remaining 5 cited pages of 1765043279686_ch s suvarnalal 5046cs.pdf"><svg viewBox="0 0 16 16" class="eye" aria-hidden="true"><path d="M1 8s2.6-4.2 7-4.2S15 8 15 8s-2.6 4.2-7 4.2S1 8 1 8z" fill="none" stroke="currentColor" stroke-width="1.3"/><circle cx="8" cy="8" r="1.9" fill="none" stroke="currentColor" stroke-width="1.3"/></svg>+5 more</a></span></span></div>
+        </td>
+        <td><span class="pill good"><span class="dot"></span>Met</span></td>
+        <td><span class="tag t-vlm" title="Found by examining the submitted photographs and scans">Visual</span></td>
+      </tr>
+      <tr class="frow" data-flag="q18" data-state="met">
+        <td class="ckcell"><input class="cbx" type="checkbox" checked data-kind="req"
+            data-key="q18" aria-label="Consider this item"></td>
+        <td class="cat">Photographs &amp; visual proof</td>
+        <td class="rulecell">
+          <div class="rulehead">A clinical photograph of the affected eye (cataract) is attached and clearly shows the affected part.</div>
+          <div class="evline"><span class="lab">What the reviewer found</span>
+            <p class="ev">Clinical eye photographs show the affected/operated eye and the ocular area, including the anterior eye and lens opacity.</p></div>
+          <div class="refs"><span class="reflab">Seen in</span><span class="chip" title="1770739117097_postfundus.jpeg"><svg viewBox="0 0 16 16" class="ic" aria-hidden="true"><path d="M4 1.5h5L12.5 5v9.5h-9z" fill="none" stroke="currentColor" stroke-width="1.3"/><path d="M9 1.5V5h3.5" fill="none" stroke="currentColor" stroke-width="1.3"/></svg><span class="fname">postfundus.jpeg</span><span class="pgs"><a class="pgbtn" href="../NTR-Patients-Files/AP12054472/Clinical%20notes/1770739117097_postfundus.jpeg" target="_blank" rel="noopener" data-name="1770739117097_postfundus.jpeg" data-page="1" data-pages="1" data-url="../NTR-Patients-Files/AP12054472/Clinical%20notes/1770739117097_postfundus.jpeg" title="Open 1770739117097_postfundus.jpeg"><svg viewBox="0 0 16 16" class="eye" aria-hidden="true"><path d="M1 8s2.6-4.2 7-4.2S15 8 15 8s-2.6 4.2-7 4.2S1 8 1 8z" fill="none" stroke="currentColor" stroke-width="1.3"/><circle cx="8" cy="8" r="1.9" fill="none" stroke="currentColor" stroke-width="1.3"/></svg>View</a></span></span><span class="chip" title="1765043331949_post cp3.jpeg"><svg viewBox="0 0 16 16" class="ic" aria-hidden="true"><path d="M4 1.5h5L12.5 5v9.5h-9z" fill="none" stroke="currentColor" stroke-width="1.3"/><path d="M9 1.5V5h3.5" fill="none" stroke="currentColor" stroke-width="1.3"/></svg><span class="fname">post cp3.jpeg</span><span class="pgs"><a class="pgbtn" href="../NTR-Patients-Files/AP12054472/Clinical%20notes/1765043331949_post%20cp3.jpeg" target="_blank" rel="noopener" data-name="1765043331949_post cp3.jpeg" data-page="1" data-pages="1" data-url="../NTR-Patients-Files/AP12054472/Clinical%20notes/1765043331949_post%20cp3.jpeg" title="Open 1765043331949_post cp3.jpeg"><svg viewBox="0 0 16 16" class="eye" aria-hidden="true"><path d="M1 8s2.6-4.2 7-4.2S15 8 15 8s-2.6 4.2-7 4.2S1 8 1 8z" fill="none" stroke="currentColor" stroke-width="1.3"/><circle cx="8" cy="8" r="1.9" fill="none" stroke="currentColor" stroke-width="1.3"/></svg>View</a></span></span></div>
+        </td>
+        <td><span class="pill good"><span class="dot"></span>Met</span></td>
+        <td><span class="tag t-vlm" title="Found by examining the submitted photographs and scans">Visual</span></td>
+      </tr>
+      <tr class="frow" data-flag="q19" data-state="met">
+        <td class="ckcell"><input class="cbx" type="checkbox" checked data-kind="req"
+            data-key="q19" aria-label="Consider this item"></td>
+        <td class="cat">Photographs &amp; visual proof</td>
+        <td class="rulecell">
+          <div class="rulehead">A post-treatment / discharge clinical photograph of the patient is attached.</div>
+          <div class="evline"><span class="lab">What the reviewer found</span>
+            <p class="ev">Post-treatment photographs show the patient after surgery, including photographs with the operative eye dressed and subsequent clinical eye photographs.</p></div>
+          <div class="refs"><span class="reflab">Seen in</span><span class="chip" title="1770739017584_INTRAOP06.jpeg"><svg viewBox="0 0 16 16" class="ic" aria-hidden="true"><path d="M4 1.5h5L12.5 5v9.5h-9z" fill="none" stroke="currentColor" stroke-width="1.3"/><path d="M9 1.5V5h3.5" fill="none" stroke="currentColor" stroke-width="1.3"/></svg><span class="fname">INTRAOP06.jpeg</span><span class="pgs"><a class="pgbtn" href="../NTR-Patients-Files/AP12054472/Clinical%20notes/1770739017584_INTRAOP06.jpeg" target="_blank" rel="noopener" data-name="1770739017584_INTRAOP06.jpeg" data-page="1" data-pages="1" data-url="../NTR-Patients-Files/AP12054472/Clinical%20notes/1770739017584_INTRAOP06.jpeg" title="Open 1770739017584_INTRAOP06.jpeg"><svg viewBox="0 0 16 16" class="eye" aria-hidden="true"><path d="M1 8s2.6-4.2 7-4.2S15 8 15 8s-2.6 4.2-7 4.2S1 8 1 8z" fill="none" stroke="currentColor" stroke-width="1.3"/><circle cx="8" cy="8" r="1.9" fill="none" stroke="currentColor" stroke-width="1.3"/></svg>View</a></span></span><span class="chip" title="1770738997804_INTRAOP02.jpeg"><svg viewBox="0 0 16 16" class="ic" aria-hidden="true"><path d="M4 1.5h5L12.5 5v9.5h-9z" fill="none" stroke="currentColor" stroke-width="1.3"/><path d="M9 1.5V5h3.5" fill="none" stroke="currentColor" stroke-width="1.3"/></svg><span class="fname">INTRAOP02.jpeg</span><span class="pgs"><a class="pgbtn" href="../NTR-Patients-Files/AP12054472/Clinical%20notes/1770738997804_INTRAOP02.jpeg" target="_blank" rel="noopener" data-name="1770738997804_INTRAOP02.jpeg" data-page="1" data-pages="1" data-url="../NTR-Patients-Files/AP12054472/Clinical%20notes/1770738997804_INTRAOP02.jpeg" title="Open 1770738997804_INTRAOP02.jpeg"><svg viewBox="0 0 16 16" class="eye" aria-hidden="true"><path d="M1 8s2.6-4.2 7-4.2S15 8 15 8s-2.6 4.2-7 4.2S1 8 1 8z" fill="none" stroke="currentColor" stroke-width="1.3"/><circle cx="8" cy="8" r="1.9" fill="none" stroke="currentColor" stroke-width="1.3"/></svg>View</a></span></span><span class="chip" title="1770739125911_post clinical pic.jpeg"><svg viewBox="0 0 16 16" class="ic" aria-hidden="true"><path d="M4 1.5h5L12.5 5v9.5h-9z" fill="none" stroke="currentColor" stroke-width="1.3"/><path d="M9 1.5V5h3.5" fill="none" stroke="currentColor" stroke-width="1.3"/></svg><span class="fname">post clinical pic.jpeg</span><span class="pgs"><a class="pgbtn" href="../NTR-Patients-Files/AP12054472/Clinical%20notes/1770739125911_post%20clinical%20pic.jpeg" target="_blank" rel="noopener" data-name="1770739125911_post clinical pic.jpeg" data-page="1" data-pages="1" data-url="../NTR-Patients-Files/AP12054472/Clinical%20notes/1770739125911_post%20clinical%20pic.jpeg" title="Open 1770739125911_post clinical pic.jpeg"><svg viewBox="0 0 16 16" class="eye" aria-hidden="true"><path d="M1 8s2.6-4.2 7-4.2S15 8 15 8s-2.6 4.2-7 4.2S1 8 1 8z" fill="none" stroke="currentColor" stroke-width="1.3"/><circle cx="8" cy="8" r="1.9" fill="none" stroke="currentColor" stroke-width="1.3"/></svg>View</a></span></span></div>
+        </td>
+        <td><span class="pill good"><span class="dot"></span>Met</span></td>
+        <td><span class="tag t-vlm" title="Found by examining the submitted photographs and scans">Visual</span></td>
+      </tr>
+      <tr class="frow" data-flag="q20" data-state="met">
+        <td class="ckcell"><input class="cbx" type="checkbox" checked data-kind="req"
+            data-key="q20" aria-label="Consider this item"></td>
+        <td class="cat">Photographs &amp; visual proof</td>
+        <td class="rulecell">
+          <div class="rulehead">One or more intra-operative photographs are attached, clearly focused, and show the key steps of the procedure.</div>
+          <div class="evline"><span class="lab">What the reviewer found</span>
+            <p class="ev">Several focused intra-operative photographs show the operative eye under sterile draping with surgical instruments and a probe in use during cataract surgery.</p></div>
+          <div class="refs"><span class="reflab">Seen in</span><span class="chip" title="1770739017584_INTRAOP06.jpeg"><svg viewBox="0 0 16 16" class="ic" aria-hidden="true"><path d="M4 1.5h5L12.5 5v9.5h-9z" fill="none" stroke="currentColor" stroke-width="1.3"/><path d="M9 1.5V5h3.5" fill="none" stroke="currentColor" stroke-width="1.3"/></svg><span class="fname">INTRAOP06.jpeg</span><span class="pgs"><a class="pgbtn" href="../NTR-Patients-Files/AP12054472/Clinical%20notes/1770739017584_INTRAOP06.jpeg" target="_blank" rel="noopener" data-name="1770739017584_INTRAOP06.jpeg" data-page="1" data-pages="1" data-url="../NTR-Patients-Files/AP12054472/Clinical%20notes/1770739017584_INTRAOP06.jpeg" title="Open 1770739017584_INTRAOP06.jpeg"><svg viewBox="0 0 16 16" class="eye" aria-hidden="true"><path d="M1 8s2.6-4.2 7-4.2S15 8 15 8s-2.6 4.2-7 4.2S1 8 1 8z" fill="none" stroke="currentColor" stroke-width="1.3"/><circle cx="8" cy="8" r="1.9" fill="none" stroke="currentColor" stroke-width="1.3"/></svg>View</a></span></span><span class="chip" title="1770739037948_INTRAOP07.jpeg"><svg viewBox="0 0 16 16" class="ic" aria-hidden="true"><path d="M4 1.5h5L12.5 5v9.5h-9z" fill="none" stroke="currentColor" stroke-width="1.3"/><path d="M9 1.5V5h3.5" fill="none" stroke="currentColor" stroke-width="1.3"/></svg><span class="fname">INTRAOP07.jpeg</span><span class="pgs"><a class="pgbtn" href="../NTR-Patients-Files/AP12054472/Clinical%20notes/1770739037948_INTRAOP07.jpeg" target="_blank" rel="noopener" data-name="1770739037948_INTRAOP07.jpeg" data-page="1" data-pages="1" data-url="../NTR-Patients-Files/AP12054472/Clinical%20notes/1770739037948_INTRAOP07.jpeg" title="Open 1770739037948_INTRAOP07.jpeg"><svg viewBox="0 0 16 16" class="eye" aria-hidden="true"><path d="M1 8s2.6-4.2 7-4.2S15 8 15 8s-2.6 4.2-7 4.2S1 8 1 8z" fill="none" stroke="currentColor" stroke-width="1.3"/><circle cx="8" cy="8" r="1.9" fill="none" stroke="currentColor" stroke-width="1.3"/></svg>View</a></span></span><span class="chip" title="1770739017573_INTRAOP04.jpeg"><svg viewBox="0 0 16 16" class="ic" aria-hidden="true"><path d="M4 1.5h5L12.5 5v9.5h-9z" fill="none" stroke="currentColor" stroke-width="1.3"/><path d="M9 1.5V5h3.5" fill="none" stroke="currentColor" stroke-width="1.3"/></svg><span class="fname">INTRAOP04.jpeg</span><span class="pgs"><a class="pgbtn" href="../NTR-Patients-Files/AP12054472/Clinical%20notes/1770739017573_INTRAOP04.jpeg" target="_blank" rel="noopener" data-name="1770739017573_INTRAOP04.jpeg" data-page="1" data-pages="1" data-url="../NTR-Patients-Files/AP12054472/Clinical%20notes/1770739017573_INTRAOP04.jpeg" title="Open 1770739017573_INTRAOP04.jpeg"><svg viewBox="0 0 16 16" class="eye" aria-hidden="true"><path d="M1 8s2.6-4.2 7-4.2S15 8 15 8s-2.6 4.2-7 4.2S1 8 1 8z" fill="none" stroke="currentColor" stroke-width="1.3"/><circle cx="8" cy="8" r="1.9" fill="none" stroke="currentColor" stroke-width="1.3"/></svg>View</a></span></span><span class="chip" title="1770738997809_INTRAOP03.jpeg"><svg viewBox="0 0 16 16" class="ic" aria-hidden="true"><path d="M4 1.5h5L12.5 5v9.5h-9z" fill="none" stroke="currentColor" stroke-width="1.3"/><path d="M9 1.5V5h3.5" fill="none" stroke="currentColor" stroke-width="1.3"/></svg><span class="fname">INTRAOP03.jpeg</span><span class="pgs"><a class="pgbtn" href="../NTR-Patients-Files/AP12054472/Clinical%20notes/1770738997809_INTRAOP03.jpeg" target="_blank" rel="noopener" data-name="1770738997809_INTRAOP03.jpeg" data-page="1" data-pages="1" data-url="../NTR-Patients-Files/AP12054472/Clinical%20notes/1770738997809_INTRAOP03.jpeg" title="Open 1770738997809_INTRAOP03.jpeg"><svg viewBox="0 0 16 16" class="eye" aria-hidden="true"><path d="M1 8s2.6-4.2 7-4.2S15 8 15 8s-2.6 4.2-7 4.2S1 8 1 8z" fill="none" stroke="currentColor" stroke-width="1.3"/><circle cx="8" cy="8" r="1.9" fill="none" stroke="currentColor" stroke-width="1.3"/></svg>View</a></span></span></div>
+        </td>
+        <td><span class="pill good"><span class="dot"></span>Met</span></td>
+        <td><span class="tag t-vlm" title="Found by examining the submitted photographs and scans">Visual</span></td>
+      </tr>
+      <tr class="frow" data-flag="q21" data-state="met">
+        <td class="ckcell"><input class="cbx" type="checkbox" checked data-kind="req"
+            data-key="q21" aria-label="Consider this item"></td>
+        <td class="cat">Photographs &amp; visual proof</td>
+        <td class="rulecell">
+          <div class="rulehead">A photograph of the surgical scar / operative site is attached.</div>
+          <div class="evline"><span class="lab">What the reviewer found</span>
+            <p class="ev">Close-up photographs show the operative eye/eyelid area with visible postoperative sutures and the operative site.</p></div>
+          <div class="refs"><span class="reflab">Seen in</span><span class="chip" title="1763213710354_SCAR PIC.jpeg"><svg viewBox="0 0 16 16" class="ic" aria-hidden="true"><path d="M4 1.5h5L12.5 5v9.5h-9z" fill="none" stroke="currentColor" stroke-width="1.3"/><path d="M9 1.5V5h3.5" fill="none" stroke="currentColor" stroke-width="1.3"/></svg><span class="fname">SCAR PIC.jpeg</span><span class="pgs"><a class="pgbtn" href="../NTR-Patients-Files/AP12054472/Clinical%20notes/1763213710354_SCAR%20PIC.jpeg" target="_blank" rel="noopener" data-name="1763213710354_SCAR PIC.jpeg" data-page="1" data-pages="1" data-url="../NTR-Patients-Files/AP12054472/Clinical%20notes/1763213710354_SCAR%20PIC.jpeg" title="Open 1763213710354_SCAR PIC.jpeg"><svg viewBox="0 0 16 16" class="eye" aria-hidden="true"><path d="M1 8s2.6-4.2 7-4.2S15 8 15 8s-2.6 4.2-7 4.2S1 8 1 8z" fill="none" stroke="currentColor" stroke-width="1.3"/><circle cx="8" cy="8" r="1.9" fill="none" stroke="currentColor" stroke-width="1.3"/></svg>View</a></span></span><span class="chip" title="1763213710348_SCAR PIC 1.jpeg"><svg viewBox="0 0 16 16" class="ic" aria-hidden="true"><path d="M4 1.5h5L12.5 5v9.5h-9z" fill="none" stroke="currentColor" stroke-width="1.3"/><path d="M9 1.5V5h3.5" fill="none" stroke="currentColor" stroke-width="1.3"/></svg><span class="fname">SCAR PIC 1.jpeg</span><span class="pgs"><a class="pgbtn" href="../NTR-Patients-Files/AP12054472/Clinical%20notes/1763213710348_SCAR%20PIC%201.jpeg" target="_blank" rel="noopener" data-name="1763213710348_SCAR PIC 1.jpeg" data-page="1" data-pages="1" data-url="../NTR-Patients-Files/AP12054472/Clinical%20notes/1763213710348_SCAR%20PIC%201.jpeg" title="Open 1763213710348_SCAR PIC 1.jpeg"><svg viewBox="0 0 16 16" class="eye" aria-hidden="true"><path d="M1 8s2.6-4.2 7-4.2S15 8 15 8s-2.6 4.2-7 4.2S1 8 1 8z" fill="none" stroke="currentColor" stroke-width="1.3"/><circle cx="8" cy="8" r="1.9" fill="none" stroke="currentColor" stroke-width="1.3"/></svg>View</a></span></span></div>
+        </td>
+        <td><span class="pill good"><span class="dot"></span>Met</span></td>
+        <td><span class="tag t-vlm" title="Found by examining the submitted photographs and scans">Visual</span></td>
+      </tr></tbody>
+  </table></div></div></div></section>
+<section class="blk a-warning" id="money"><div class="blkhead">
+  <div><div class="eyebrow">Financial impact</div>
+    <h2>Deduction flags <span class="badge warning">4</span></h2>
+    <p>Amounts held back under the Trust's standard deduction guidelines, each with the evidence
+       behind it. Untick a line to drop it, type over an amount to change it, and the approved
+       total updates as you go.</p></div>
+  <span class="badge warning" style="font-size:14px;padding:7px 14px" id="badgetotal">₹ 4,000 total</span>
+</div>
+<div class="blkbody">
+  <div class="edbar">
+    <button class="abtn primary" id="addrow">+ Add a deduction</button>
+    <button class="abtn" id="allon">Consider all</button>
+    <button class="abtn" id="alloff">Consider none</button>
+    <span class="sp"></span>
+    <button class="abtn" id="exportcsv">Export CSV</button>
+    <button class="abtn" id="resetall">Reset to system values</button>
+  </div>
+  <div class="tablecard"><div class="tscroll"><table id="dedtable">
+    <thead><tr><th class="ckcell">Consider</th><th style="width:200px">Category</th>
+      <th>Deduction rule applied</th><th style="width:190px">How it is worked out</th>
+      <th style="width:100px">Source</th>
+      <th class="num" style="width:150px">Amount (&#8377;)</th></tr></thead>
+    <tbody>
+      <tr data-row="d1" data-amt="500">
+        <td class="ckcell"><input class="ck" type="checkbox" checked
+            aria-label="Consider this deduction" data-ck="d1"></td>
+        <td class="cat">Approvals &amp; procedure match</td>
+        <td class="rulecell">
+          <div class="rulehead">No discharge summary / consent form(s) / preauth form(s).</div>
+          <div class="evline"><span class="lab">What the reviewer found</span>A discharge summary and consent form are present, but no preauthorization form is present in the submitted claim text. Deduction applied at the stated flat amount.</div>
+          
+        </td>
+        <td class="basis">Flat rate</td>
+        <td><span class="tag t-llm" title="Found by reading the text of the submitted documents">Text</span></td>
+        <td class="num"><input class="amtin" type="number" step="1" min="0" value="500"
+            data-amtin="d1" aria-label="Deduction amount in rupees"><span class="editflag"
+            style="display:none">edited</span></td>
+      </tr>
+      <tr data-row="d2" data-amt="1000">
+        <td class="ckcell"><input class="ck" type="checkbox" checked
+            aria-label="Consider this deduction" data-ck="d2"></td>
+        <td class="cat">Identity &amp; case sheet</td>
+        <td class="rulecell">
+          <div class="rulehead">Case sheet not properly updated (content incomplete/inconsistent).</div>
+          <div class="evline"><span class="lab">What the reviewer found</span>The case sheet contains blank clinical, biometry, anaesthesia, and operative fields and inconsistent patient names, ages, and dates across its sections.</div>
+          <div class="refs"><span class="reflab">Seen in</span><span class="chip" title="claims/AP12054472/1765043279686_ch s suvarnalal 5046cs.pdf"><svg viewBox="0 0 16 16" class="ic" aria-hidden="true"><path d="M4 1.5h5L12.5 5v9.5h-9z" fill="none" stroke="currentColor" stroke-width="1.3"/><path d="M9 1.5V5h3.5" fill="none" stroke="currentColor" stroke-width="1.3"/></svg><span class="fname">ch s suvarnalal 5046cs.pdf</span><span class="pgs"><a class="pgbtn" href="../NTR-Patients-Files/AP12054472/Clinical%20notes/1765043279686_ch%20s%20suvarnalal%205046cs.pdf#page=2" target="_blank" rel="noopener" data-name="1765043279686_ch s suvarnalal 5046cs.pdf" data-page="2" data-pages="2,4,5,6,7" data-url="../NTR-Patients-Files/AP12054472/Clinical%20notes/1765043279686_ch%20s%20suvarnalal%205046cs.pdf" title="Open page 2 of 1765043279686_ch s suvarnalal 5046cs.pdf"><svg viewBox="0 0 16 16" class="eye" aria-hidden="true"><path d="M1 8s2.6-4.2 7-4.2S15 8 15 8s-2.6 4.2-7 4.2S1 8 1 8z" fill="none" stroke="currentColor" stroke-width="1.3"/><circle cx="8" cy="8" r="1.9" fill="none" stroke="currentColor" stroke-width="1.3"/></svg>2</a><a class="pgbtn" href="../NTR-Patients-Files/AP12054472/Clinical%20notes/1765043279686_ch%20s%20suvarnalal%205046cs.pdf#page=4" target="_blank" rel="noopener" data-name="1765043279686_ch s suvarnalal 5046cs.pdf" data-page="4" data-pages="2,4,5,6,7" data-url="../NTR-Patients-Files/AP12054472/Clinical%20notes/1765043279686_ch%20s%20suvarnalal%205046cs.pdf" title="Open page 4 of 1765043279686_ch s suvarnalal 5046cs.pdf"><svg viewBox="0 0 16 16" class="eye" aria-hidden="true"><path d="M1 8s2.6-4.2 7-4.2S15 8 15 8s-2.6 4.2-7 4.2S1 8 1 8z" fill="none" stroke="currentColor" stroke-width="1.3"/><circle cx="8" cy="8" r="1.9" fill="none" stroke="currentColor" stroke-width="1.3"/></svg>4</a><a class="pgbtn" href="../NTR-Patients-Files/AP12054472/Clinical%20notes/1765043279686_ch%20s%20suvarnalal%205046cs.pdf#page=5" target="_blank" rel="noopener" data-name="1765043279686_ch s suvarnalal 5046cs.pdf" data-page="5" data-pages="2,4,5,6,7" data-url="../NTR-Patients-Files/AP12054472/Clinical%20notes/1765043279686_ch%20s%20suvarnalal%205046cs.pdf" title="Open page 5 of 1765043279686_ch s suvarnalal 5046cs.pdf"><svg viewBox="0 0 16 16" class="eye" aria-hidden="true"><path d="M1 8s2.6-4.2 7-4.2S15 8 15 8s-2.6 4.2-7 4.2S1 8 1 8z" fill="none" stroke="currentColor" stroke-width="1.3"/><circle cx="8" cy="8" r="1.9" fill="none" stroke="currentColor" stroke-width="1.3"/></svg>5</a><a class="pgbtn" href="../NTR-Patients-Files/AP12054472/Clinical%20notes/1765043279686_ch%20s%20suvarnalal%205046cs.pdf#page=6" target="_blank" rel="noopener" data-name="1765043279686_ch s suvarnalal 5046cs.pdf" data-page="6" data-pages="2,4,5,6,7" data-url="../NTR-Patients-Files/AP12054472/Clinical%20notes/1765043279686_ch%20s%20suvarnalal%205046cs.pdf" title="Open page 6 of 1765043279686_ch s suvarnalal 5046cs.pdf"><svg viewBox="0 0 16 16" class="eye" aria-hidden="true"><path d="M1 8s2.6-4.2 7-4.2S15 8 15 8s-2.6 4.2-7 4.2S1 8 1 8z" fill="none" stroke="currentColor" stroke-width="1.3"/><circle cx="8" cy="8" r="1.9" fill="none" stroke="currentColor" stroke-width="1.3"/></svg>6</a><a class="pgbtn" href="../NTR-Patients-Files/AP12054472/Clinical%20notes/1765043279686_ch%20s%20suvarnalal%205046cs.pdf#page=7" target="_blank" rel="noopener" data-name="1765043279686_ch s suvarnalal 5046cs.pdf" data-page="7" data-pages="2,4,5,6,7" data-url="../NTR-Patients-Files/AP12054472/Clinical%20notes/1765043279686_ch%20s%20suvarnalal%205046cs.pdf" title="Open page 7 of 1765043279686_ch s suvarnalal 5046cs.pdf"><svg viewBox="0 0 16 16" class="eye" aria-hidden="true"><path d="M1 8s2.6-4.2 7-4.2S15 8 15 8s-2.6 4.2-7 4.2S1 8 1 8z" fill="none" stroke="currentColor" stroke-width="1.3"/><circle cx="8" cy="8" r="1.9" fill="none" stroke="currentColor" stroke-width="1.3"/></svg>7</a></span></span></div>
+        </td>
+        <td class="basis">Flat rate</td>
+        <td><span class="tag t-llm" title="Found by reading the text of the submitted documents">Text</span></td>
+        <td class="num"><input class="amtin" type="number" step="1" min="0" value="1000"
+            data-amtin="d2" aria-label="Deduction amount in rupees"><span class="editflag"
+            style="display:none">edited</span></td>
+      </tr>
+      <tr data-row="d3" data-amt="500">
+        <td class="ckcell"><input class="ck" type="checkbox" checked
+            aria-label="Consider this deduction" data-ck="d3"></td>
+        <td class="cat">Identity &amp; case sheet</td>
+        <td class="rulecell">
+          <div class="rulehead">Mismatched name or PID.</div>
+          <div class="evline"><span class="lab">What the reviewer found</span>The case sheet records names such as CH. S. Suvoanala/CH. S. Sivanlal with IP 5046, while the scheme discharge summary identifies the patient as Chebrolu Samuel Suvarna Lal with Patient ID AP21599631.</div>
+          <div class="refs"><span class="reflab">Seen in</span><span class="chip" title="claims/AP12054472/1765043279686_ch s suvarnalal 5046cs.pdf"><svg viewBox="0 0 16 16" class="ic" aria-hidden="true"><path d="M4 1.5h5L12.5 5v9.5h-9z" fill="none" stroke="currentColor" stroke-width="1.3"/><path d="M9 1.5V5h3.5" fill="none" stroke="currentColor" stroke-width="1.3"/></svg><span class="fname">ch s suvarnalal 5046cs.pdf</span><span class="pgs"><a class="pgbtn" href="../NTR-Patients-Files/AP12054472/Clinical%20notes/1765043279686_ch%20s%20suvarnalal%205046cs.pdf#page=1" target="_blank" rel="noopener" data-name="1765043279686_ch s suvarnalal 5046cs.pdf" data-page="1" data-pages="1,2" data-url="../NTR-Patients-Files/AP12054472/Clinical%20notes/1765043279686_ch%20s%20suvarnalal%205046cs.pdf" title="Open page 1 of 1765043279686_ch s suvarnalal 5046cs.pdf"><svg viewBox="0 0 16 16" class="eye" aria-hidden="true"><path d="M1 8s2.6-4.2 7-4.2S15 8 15 8s-2.6 4.2-7 4.2S1 8 1 8z" fill="none" stroke="currentColor" stroke-width="1.3"/><circle cx="8" cy="8" r="1.9" fill="none" stroke="currentColor" stroke-width="1.3"/></svg>1</a><a class="pgbtn" href="../NTR-Patients-Files/AP12054472/Clinical%20notes/1765043279686_ch%20s%20suvarnalal%205046cs.pdf#page=2" target="_blank" rel="noopener" data-name="1765043279686_ch s suvarnalal 5046cs.pdf" data-page="2" data-pages="1,2" data-url="../NTR-Patients-Files/AP12054472/Clinical%20notes/1765043279686_ch%20s%20suvarnalal%205046cs.pdf" title="Open page 2 of 1765043279686_ch s suvarnalal 5046cs.pdf"><svg viewBox="0 0 16 16" class="eye" aria-hidden="true"><path d="M1 8s2.6-4.2 7-4.2S15 8 15 8s-2.6 4.2-7 4.2S1 8 1 8z" fill="none" stroke="currentColor" stroke-width="1.3"/><circle cx="8" cy="8" r="1.9" fill="none" stroke="currentColor" stroke-width="1.3"/></svg>2</a></span></span><span class="chip" title="claims/AP12054472/1763213717265_DIS SUM.jpeg"><svg viewBox="0 0 16 16" class="ic" aria-hidden="true"><path d="M4 1.5h5L12.5 5v9.5h-9z" fill="none" stroke="currentColor" stroke-width="1.3"/><path d="M9 1.5V5h3.5" fill="none" stroke="currentColor" stroke-width="1.3"/></svg><span class="fname">DIS SUM.jpeg</span><span class="pgs"><a class="pgbtn" href="../NTR-Patients-Files/AP12054472/Clinical%20notes/1763213717265_DIS%20SUM.jpeg" target="_blank" rel="noopener" data-name="1763213717265_DIS SUM.jpeg" data-page="1" data-pages="1" data-url="../NTR-Patients-Files/AP12054472/Clinical%20notes/1763213717265_DIS%20SUM.jpeg" title="Open 1763213717265_DIS SUM.jpeg"><svg viewBox="0 0 16 16" class="eye" aria-hidden="true"><path d="M1 8s2.6-4.2 7-4.2S15 8 15 8s-2.6 4.2-7 4.2S1 8 1 8z" fill="none" stroke="currentColor" stroke-width="1.3"/><circle cx="8" cy="8" r="1.9" fill="none" stroke="currentColor" stroke-width="1.3"/></svg>View</a></span></span></div>
+        </td>
+        <td class="basis">Flat rate</td>
+        <td><span class="tag t-llm" title="Found by reading the text of the submitted documents">Text</span></td>
+        <td class="num"><input class="amtin" type="number" step="1" min="0" value="500"
+            data-amtin="d3" aria-label="Deduction amount in rupees"><span class="editflag"
+            style="display:none">edited</span></td>
+      </tr>
+      <tr data-row="d4" data-amt="2000">
+        <td class="ckcell"><input class="ck" type="checkbox" checked
+            aria-label="Consider this deduction" data-ck="d4"></td>
+        <td class="cat">Investigations &amp; reports</td>
+        <td class="rulecell">
+          <div class="rulehead">Post-op ultrasound / post-op ECHO CD (image study) not submitted.</div>
+          <div class="evline"><span class="lab">What the reviewer found</span>No post-operative ultrasound/B-scan image, printout, or ECHO image study is visible in the supplied claim images.</div>
+          <div class="refs"><span class="reflab">Seen in</span><span class="chip" title="1765043279686_ch s suvarnalal 5046cs.pdf"><svg viewBox="0 0 16 16" class="ic" aria-hidden="true"><path d="M4 1.5h5L12.5 5v9.5h-9z" fill="none" stroke="currentColor" stroke-width="1.3"/><path d="M9 1.5V5h3.5" fill="none" stroke="currentColor" stroke-width="1.3"/></svg><span class="fname">ch s suvarnalal 5046cs.pdf</span><span class="pgs"><a class="pgbtn" href="../NTR-Patients-Files/AP12054472/Clinical%20notes/1765043279686_ch%20s%20suvarnalal%205046cs.pdf#page=10" target="_blank" rel="noopener" data-name="1765043279686_ch s suvarnalal 5046cs.pdf" data-page="10" data-pages="10" data-url="../NTR-Patients-Files/AP12054472/Clinical%20notes/1765043279686_ch%20s%20suvarnalal%205046cs.pdf" title="Open page 10 of 1765043279686_ch s suvarnalal 5046cs.pdf"><svg viewBox="0 0 16 16" class="eye" aria-hidden="true"><path d="M1 8s2.6-4.2 7-4.2S15 8 15 8s-2.6 4.2-7 4.2S1 8 1 8z" fill="none" stroke="currentColor" stroke-width="1.3"/><circle cx="8" cy="8" r="1.9" fill="none" stroke="currentColor" stroke-width="1.3"/></svg>10</a></span></span></div>
+        </td>
+        <td class="basis">Flat rate</td>
+        <td><span class="tag t-vlm" title="Found by examining the submitted photographs and scans">Visual</span></td>
+        <td class="num"><input class="amtin" type="number" step="1" min="0" value="2000"
+            data-amtin="d4" aria-label="Deduction amount in rupees"><span class="editflag"
+            style="display:none">edited</span></td>
+      </tr></tbody>
+    <tbody id="extrarows"></tbody>
+    <tfoot><tr>
+      <td colspan="3">
+        <div id="countline">Total deduction &mdash; 4 rules considered</div>
+        <div class="chgnote" id="chgnote" style="display:none"></div>
+      </td>
+      <td colspan="3">
+        <div class="settle">
+          <div class="box"><div class="l">System proposed</div>
+            <div class="n muted">₹ 4,000</div></div>
+          <div class="box final"><div class="l">Approved deduction</div>
+            <div class="n" id="finaltotal">₹ 4,000</div></div>
+        </div>
+      </td>
+    </tr></tfoot>
+  </table></div></div>
+  <div class="notewrap">
+    <label for="revnote">Reviewer note (saved on this computer, and included when you print)</label>
+    <textarea id="revnote" placeholder="Reason for excluding or changing any deduction, query raised to the hospital, etc."></textarea>
+  </div></div></section>
+<section class="blk a-critical" id="triggers"><div class="blkhead">
+  <div><div class="eyebrow">Decision drivers</div>
+    <h2>Rejection flags <span class="badge critical" id="badgerej">2</span></h2>
+    <p>Any single item here is enough to stop payment. The grey line is the rule that was tested;
+       the paragraph below it is what was actually found in this claim's file.
+       Untick <b>Consider</b> to set a flag aside.</p></div>
+  <div class="right"><button class="abtn" data-bulk="rej" data-on="1">Consider all</button><button class="abtn" data-bulk="rej" data-on="0">Consider none</button></div>
+</div><div class="blkbody">
+  <div class="tablecard"><div class="tscroll"><table>
+    <thead><tr><th class="ckcell">Consider</th><th style="width:200px">Category</th>
+      <th>Rejection rule and what was found</th><th style="width:210px">Flag</th>
+      <th style="width:100px">Source</th></tr></thead>
+    <tbody>
+      <tr class="frow" data-flag="r1">
+        <td class="ckcell"><input class="cbx" type="checkbox" checked data-kind="rej"
+            data-key="r1" aria-label="Consider this item"></td>
+        <td class="cat">Investigations &amp; reports</td>
+        <td class="rulecell">
+          <div class="rulehead">Detect textual tampering indicators in case-sheet notes/reports (inconsistent fonts/dates, contradictory data, signs of digital text editing).</div>
+          <div class="evline"><span class="lab">What the reviewer found</span>
+            <p class="ev">The text contains material contradictions, including admission date 11/11/25 in the case sheet versus 01/11/25 in the discharge summary, ages of 64, 66, and 67, and multiple inconsistent patient-name spellings/identities.</p></div>
+          <div class="refs"><span class="reflab">Seen in</span><span class="chip" title="claims/AP12054472/1765043279686_ch s suvarnalal 5046cs.pdf"><svg viewBox="0 0 16 16" class="ic" aria-hidden="true"><path d="M4 1.5h5L12.5 5v9.5h-9z" fill="none" stroke="currentColor" stroke-width="1.3"/><path d="M9 1.5V5h3.5" fill="none" stroke="currentColor" stroke-width="1.3"/></svg><span class="fname">ch s suvarnalal 5046cs.pdf</span><span class="pgs"><a class="pgbtn" href="../NTR-Patients-Files/AP12054472/Clinical%20notes/1765043279686_ch%20s%20suvarnalal%205046cs.pdf#page=1" target="_blank" rel="noopener" data-name="1765043279686_ch s suvarnalal 5046cs.pdf" data-page="1" data-pages="1,2,5,7,8,10" data-url="../NTR-Patients-Files/AP12054472/Clinical%20notes/1765043279686_ch%20s%20suvarnalal%205046cs.pdf" title="Open page 1 of 1765043279686_ch s suvarnalal 5046cs.pdf"><svg viewBox="0 0 16 16" class="eye" aria-hidden="true"><path d="M1 8s2.6-4.2 7-4.2S15 8 15 8s-2.6 4.2-7 4.2S1 8 1 8z" fill="none" stroke="currentColor" stroke-width="1.3"/><circle cx="8" cy="8" r="1.9" fill="none" stroke="currentColor" stroke-width="1.3"/></svg>1</a><a class="pgbtn" href="../NTR-Patients-Files/AP12054472/Clinical%20notes/1765043279686_ch%20s%20suvarnalal%205046cs.pdf#page=2" target="_blank" rel="noopener" data-name="1765043279686_ch s suvarnalal 5046cs.pdf" data-page="2" data-pages="1,2,5,7,8,10" data-url="../NTR-Patients-Files/AP12054472/Clinical%20notes/1765043279686_ch%20s%20suvarnalal%205046cs.pdf" title="Open page 2 of 1765043279686_ch s suvarnalal 5046cs.pdf"><svg viewBox="0 0 16 16" class="eye" aria-hidden="true"><path d="M1 8s2.6-4.2 7-4.2S15 8 15 8s-2.6 4.2-7 4.2S1 8 1 8z" fill="none" stroke="currentColor" stroke-width="1.3"/><circle cx="8" cy="8" r="1.9" fill="none" stroke="currentColor" stroke-width="1.3"/></svg>2</a><a class="pgbtn" href="../NTR-Patients-Files/AP12054472/Clinical%20notes/1765043279686_ch%20s%20suvarnalal%205046cs.pdf#page=5" target="_blank" rel="noopener" data-name="1765043279686_ch s suvarnalal 5046cs.pdf" data-page="5" data-pages="1,2,5,7,8,10" data-url="../NTR-Patients-Files/AP12054472/Clinical%20notes/1765043279686_ch%20s%20suvarnalal%205046cs.pdf" title="Open page 5 of 1765043279686_ch s suvarnalal 5046cs.pdf"><svg viewBox="0 0 16 16" class="eye" aria-hidden="true"><path d="M1 8s2.6-4.2 7-4.2S15 8 15 8s-2.6 4.2-7 4.2S1 8 1 8z" fill="none" stroke="currentColor" stroke-width="1.3"/><circle cx="8" cy="8" r="1.9" fill="none" stroke="currentColor" stroke-width="1.3"/></svg>5</a><a class="pgbtn" href="../NTR-Patients-Files/AP12054472/Clinical%20notes/1765043279686_ch%20s%20suvarnalal%205046cs.pdf#page=7" target="_blank" rel="noopener" data-name="1765043279686_ch s suvarnalal 5046cs.pdf" data-page="7" data-pages="1,2,5,7,8,10" data-url="../NTR-Patients-Files/AP12054472/Clinical%20notes/1765043279686_ch%20s%20suvarnalal%205046cs.pdf" title="Open page 7 of 1765043279686_ch s suvarnalal 5046cs.pdf"><svg viewBox="0 0 16 16" class="eye" aria-hidden="true"><path d="M1 8s2.6-4.2 7-4.2S15 8 15 8s-2.6 4.2-7 4.2S1 8 1 8z" fill="none" stroke="currentColor" stroke-width="1.3"/><circle cx="8" cy="8" r="1.9" fill="none" stroke="currentColor" stroke-width="1.3"/></svg>7</a><a class="pgbtn" href="../NTR-Patients-Files/AP12054472/Clinical%20notes/1765043279686_ch%20s%20suvarnalal%205046cs.pdf#page=8" target="_blank" rel="noopener" data-name="1765043279686_ch s suvarnalal 5046cs.pdf" data-page="8" data-pages="1,2,5,7,8,10" data-url="../NTR-Patients-Files/AP12054472/Clinical%20notes/1765043279686_ch%20s%20suvarnalal%205046cs.pdf" title="Open page 8 of 1765043279686_ch s suvarnalal 5046cs.pdf"><svg viewBox="0 0 16 16" class="eye" aria-hidden="true"><path d="M1 8s2.6-4.2 7-4.2S15 8 15 8s-2.6 4.2-7 4.2S1 8 1 8z" fill="none" stroke="currentColor" stroke-width="1.3"/><circle cx="8" cy="8" r="1.9" fill="none" stroke="currentColor" stroke-width="1.3"/></svg>8</a><a class="pgbtn" href="../NTR-Patients-Files/AP12054472/Clinical%20notes/1765043279686_ch%20s%20suvarnalal%205046cs.pdf#page=10" target="_blank" rel="noopener" data-name="1765043279686_ch s suvarnalal 5046cs.pdf" data-page="10" data-pages="1,2,5,7,8,10" data-url="../NTR-Patients-Files/AP12054472/Clinical%20notes/1765043279686_ch%20s%20suvarnalal%205046cs.pdf" title="Open the remaining 1 cited pages of 1765043279686_ch s suvarnalal 5046cs.pdf"><svg viewBox="0 0 16 16" class="eye" aria-hidden="true"><path d="M1 8s2.6-4.2 7-4.2S15 8 15 8s-2.6 4.2-7 4.2S1 8 1 8z" fill="none" stroke="currentColor" stroke-width="1.3"/><circle cx="8" cy="8" r="1.9" fill="none" stroke="currentColor" stroke-width="1.3"/></svg>+1 more</a></span></span><span class="chip" title="claims/AP12054472/1763213717265_DIS SUM.jpeg"><svg viewBox="0 0 16 16" class="ic" aria-hidden="true"><path d="M4 1.5h5L12.5 5v9.5h-9z" fill="none" stroke="currentColor" stroke-width="1.3"/><path d="M9 1.5V5h3.5" fill="none" stroke="currentColor" stroke-width="1.3"/></svg><span class="fname">DIS SUM.jpeg</span><span class="pgs"><a class="pgbtn" href="../NTR-Patients-Files/AP12054472/Clinical%20notes/1763213717265_DIS%20SUM.jpeg" target="_blank" rel="noopener" data-name="1763213717265_DIS SUM.jpeg" data-page="1" data-pages="1" data-url="../NTR-Patients-Files/AP12054472/Clinical%20notes/1763213717265_DIS%20SUM.jpeg" title="Open 1763213717265_DIS SUM.jpeg"><svg viewBox="0 0 16 16" class="eye" aria-hidden="true"><path d="M1 8s2.6-4.2 7-4.2S15 8 15 8s-2.6 4.2-7 4.2S1 8 1 8z" fill="none" stroke="currentColor" stroke-width="1.3"/><circle cx="8" cy="8" r="1.9" fill="none" stroke="currentColor" stroke-width="1.3"/></svg>View</a></span></span></div>
+        </td>
+        <td><span class="flagname">Document text tampering</span></td>
+        <td><span class="tag t-llm" title="Found by reading the text of the submitted documents">Text</span></td>
+      </tr>
+      <tr class="frow" data-flag="r2">
+        <td class="ckcell"><input class="cbx" type="checkbox" checked data-kind="rej"
+            data-key="r2" aria-label="Consider this item"></td>
+        <td class="cat">Identity &amp; case sheet</td>
+        <td class="rulecell">
+          <div class="rulehead">Case sheet not submitted, or the submitted case sheet&#x27;s text (patient/procedure) does not match the claim.</div>
+          <div class="evline"><span class="lab">What the reviewer found</span>
+            <p class="ev clamp">A case sheet was submitted, but its patient identity does not match the claim/discharge documentation: the case sheet records CH. S. Suvoanala/CH. S. Sivanlal, whereas the claim documentation records Chebrolu Samuel Suvarna Lal. The mismatch is unresolved in the supplied records.</p><button class="more">Read more</button></div>
+          <div class="refs"><span class="reflab">Seen in</span><span class="chip" title="claims/AP12054472/1765043279686_ch s suvarnalal 5046cs.pdf"><svg viewBox="0 0 16 16" class="ic" aria-hidden="true"><path d="M4 1.5h5L12.5 5v9.5h-9z" fill="none" stroke="currentColor" stroke-width="1.3"/><path d="M9 1.5V5h3.5" fill="none" stroke="currentColor" stroke-width="1.3"/></svg><span class="fname">ch s suvarnalal 5046cs.pdf</span><span class="pgs"><a class="pgbtn" href="../NTR-Patients-Files/AP12054472/Clinical%20notes/1765043279686_ch%20s%20suvarnalal%205046cs.pdf#page=1" target="_blank" rel="noopener" data-name="1765043279686_ch s suvarnalal 5046cs.pdf" data-page="1" data-pages="1,2" data-url="../NTR-Patients-Files/AP12054472/Clinical%20notes/1765043279686_ch%20s%20suvarnalal%205046cs.pdf" title="Open page 1 of 1765043279686_ch s suvarnalal 5046cs.pdf"><svg viewBox="0 0 16 16" class="eye" aria-hidden="true"><path d="M1 8s2.6-4.2 7-4.2S15 8 15 8s-2.6 4.2-7 4.2S1 8 1 8z" fill="none" stroke="currentColor" stroke-width="1.3"/><circle cx="8" cy="8" r="1.9" fill="none" stroke="currentColor" stroke-width="1.3"/></svg>1</a><a class="pgbtn" href="../NTR-Patients-Files/AP12054472/Clinical%20notes/1765043279686_ch%20s%20suvarnalal%205046cs.pdf#page=2" target="_blank" rel="noopener" data-name="1765043279686_ch s suvarnalal 5046cs.pdf" data-page="2" data-pages="1,2" data-url="../NTR-Patients-Files/AP12054472/Clinical%20notes/1765043279686_ch%20s%20suvarnalal%205046cs.pdf" title="Open page 2 of 1765043279686_ch s suvarnalal 5046cs.pdf"><svg viewBox="0 0 16 16" class="eye" aria-hidden="true"><path d="M1 8s2.6-4.2 7-4.2S15 8 15 8s-2.6 4.2-7 4.2S1 8 1 8z" fill="none" stroke="currentColor" stroke-width="1.3"/><circle cx="8" cy="8" r="1.9" fill="none" stroke="currentColor" stroke-width="1.3"/></svg>2</a></span></span><span class="chip" title="claims/AP12054472/1763213717265_DIS SUM.jpeg"><svg viewBox="0 0 16 16" class="ic" aria-hidden="true"><path d="M4 1.5h5L12.5 5v9.5h-9z" fill="none" stroke="currentColor" stroke-width="1.3"/><path d="M9 1.5V5h3.5" fill="none" stroke="currentColor" stroke-width="1.3"/></svg><span class="fname">DIS SUM.jpeg</span><span class="pgs"><a class="pgbtn" href="../NTR-Patients-Files/AP12054472/Clinical%20notes/1763213717265_DIS%20SUM.jpeg" target="_blank" rel="noopener" data-name="1763213717265_DIS SUM.jpeg" data-page="1" data-pages="1" data-url="../NTR-Patients-Files/AP12054472/Clinical%20notes/1763213717265_DIS%20SUM.jpeg" title="Open 1763213717265_DIS SUM.jpeg"><svg viewBox="0 0 16 16" class="eye" aria-hidden="true"><path d="M1 8s2.6-4.2 7-4.2S15 8 15 8s-2.6 4.2-7 4.2S1 8 1 8z" fill="none" stroke="currentColor" stroke-width="1.3"/><circle cx="8" cy="8" r="1.9" fill="none" stroke="currentColor" stroke-width="1.3"/></svg>View</a></span></span></div>
+        </td>
+        <td><span class="flagname">Case sheet missing or does not match</span></td>
+        <td><span class="tag t-llm" title="Found by reading the text of the submitted documents">Text</span></td>
+      </tr></tbody>
+  </table></div></div></div></section>
+<section class="blk a-plain" id="documents"><div class="blkhead">
+  <div><div class="eyebrow">Evidence trail</div>
+    <h2>Documents cited <span class="badge">14</span></h2>
+    <p>Files the findings were drawn from, most-referenced first. The count shows how many
+       findings depend on that file &mdash; the top ones are worth opening first.</p></div>
+</div><div class="blkbody"><div class="docgrid">
+    <div class="doccard">
+      <svg viewBox="0 0 16 16" style="width:15px;height:15px;flex:none;margin-top:2px;color:var(--ink-3)" aria-hidden="true">
+        <path d="M4 1.5h5L12.5 5v9.5h-9z" fill="none" stroke="currentColor" stroke-width="1.3"/>
+        <path d="M9 1.5V5h3.5" fill="none" stroke="currentColor" stroke-width="1.3"/></svg>
+      <div style="min-width:0"><div class="nm">ch s suvarnalal 5046cs.pdf</div><div class="mt">cited on page 1, 2, 3, 4, 5, 6, 7, 8, 9, 10</div>
+        <div class="opens"><a class="pgbtn" href="../NTR-Patients-Files/AP12054472/Clinical%20notes/1765043279686_ch%20s%20suvarnalal%205046cs.pdf#page=1" target="_blank" rel="noopener" data-name="1765043279686_ch s suvarnalal 5046cs.pdf" data-page="1" data-pages="1,2,3,4,5,6,7,8,9,10" data-url="../NTR-Patients-Files/AP12054472/Clinical%20notes/1765043279686_ch%20s%20suvarnalal%205046cs.pdf" title="Open page 1 of 1765043279686_ch s suvarnalal 5046cs.pdf"><svg viewBox="0 0 16 16" class="eye" aria-hidden="true"><path d="M1 8s2.6-4.2 7-4.2S15 8 15 8s-2.6 4.2-7 4.2S1 8 1 8z" fill="none" stroke="currentColor" stroke-width="1.3"/><circle cx="8" cy="8" r="1.9" fill="none" stroke="currentColor" stroke-width="1.3"/></svg>1</a><a class="pgbtn" href="../NTR-Patients-Files/AP12054472/Clinical%20notes/1765043279686_ch%20s%20suvarnalal%205046cs.pdf#page=2" target="_blank" rel="noopener" data-name="1765043279686_ch s suvarnalal 5046cs.pdf" data-page="2" data-pages="1,2,3,4,5,6,7,8,9,10" data-url="../NTR-Patients-Files/AP12054472/Clinical%20notes/1765043279686_ch%20s%20suvarnalal%205046cs.pdf" title="Open page 2 of 1765043279686_ch s suvarnalal 5046cs.pdf"><svg viewBox="0 0 16 16" class="eye" aria-hidden="true"><path d="M1 8s2.6-4.2 7-4.2S15 8 15 8s-2.6 4.2-7 4.2S1 8 1 8z" fill="none" stroke="currentColor" stroke-width="1.3"/><circle cx="8" cy="8" r="1.9" fill="none" stroke="currentColor" stroke-width="1.3"/></svg>2</a><a class="pgbtn" href="../NTR-Patients-Files/AP12054472/Clinical%20notes/1765043279686_ch%20s%20suvarnalal%205046cs.pdf#page=3" target="_blank" rel="noopener" data-name="1765043279686_ch s suvarnalal 5046cs.pdf" data-page="3" data-pages="1,2,3,4,5,6,7,8,9,10" data-url="../NTR-Patients-Files/AP12054472/Clinical%20notes/1765043279686_ch%20s%20suvarnalal%205046cs.pdf" title="Open page 3 of 1765043279686_ch s suvarnalal 5046cs.pdf"><svg viewBox="0 0 16 16" class="eye" aria-hidden="true"><path d="M1 8s2.6-4.2 7-4.2S15 8 15 8s-2.6 4.2-7 4.2S1 8 1 8z" fill="none" stroke="currentColor" stroke-width="1.3"/><circle cx="8" cy="8" r="1.9" fill="none" stroke="currentColor" stroke-width="1.3"/></svg>3</a><a class="pgbtn" href="../NTR-Patients-Files/AP12054472/Clinical%20notes/1765043279686_ch%20s%20suvarnalal%205046cs.pdf#page=4" target="_blank" rel="noopener" data-name="1765043279686_ch s suvarnalal 5046cs.pdf" data-page="4" data-pages="1,2,3,4,5,6,7,8,9,10" data-url="../NTR-Patients-Files/AP12054472/Clinical%20notes/1765043279686_ch%20s%20suvarnalal%205046cs.pdf" title="Open page 4 of 1765043279686_ch s suvarnalal 5046cs.pdf"><svg viewBox="0 0 16 16" class="eye" aria-hidden="true"><path d="M1 8s2.6-4.2 7-4.2S15 8 15 8s-2.6 4.2-7 4.2S1 8 1 8z" fill="none" stroke="currentColor" stroke-width="1.3"/><circle cx="8" cy="8" r="1.9" fill="none" stroke="currentColor" stroke-width="1.3"/></svg>4</a><a class="pgbtn" href="../NTR-Patients-Files/AP12054472/Clinical%20notes/1765043279686_ch%20s%20suvarnalal%205046cs.pdf#page=5" target="_blank" rel="noopener" data-name="1765043279686_ch s suvarnalal 5046cs.pdf" data-page="5" data-pages="1,2,3,4,5,6,7,8,9,10" data-url="../NTR-Patients-Files/AP12054472/Clinical%20notes/1765043279686_ch%20s%20suvarnalal%205046cs.pdf" title="Open page 5 of 1765043279686_ch s suvarnalal 5046cs.pdf"><svg viewBox="0 0 16 16" class="eye" aria-hidden="true"><path d="M1 8s2.6-4.2 7-4.2S15 8 15 8s-2.6 4.2-7 4.2S1 8 1 8z" fill="none" stroke="currentColor" stroke-width="1.3"/><circle cx="8" cy="8" r="1.9" fill="none" stroke="currentColor" stroke-width="1.3"/></svg>5</a><a class="pgbtn" href="../NTR-Patients-Files/AP12054472/Clinical%20notes/1765043279686_ch%20s%20suvarnalal%205046cs.pdf#page=6" target="_blank" rel="noopener" data-name="1765043279686_ch s suvarnalal 5046cs.pdf" data-page="6" data-pages="1,2,3,4,5,6,7,8,9,10" data-url="../NTR-Patients-Files/AP12054472/Clinical%20notes/1765043279686_ch%20s%20suvarnalal%205046cs.pdf" title="Open the remaining 5 cited pages of 1765043279686_ch s suvarnalal 5046cs.pdf"><svg viewBox="0 0 16 16" class="eye" aria-hidden="true"><path d="M1 8s2.6-4.2 7-4.2S15 8 15 8s-2.6 4.2-7 4.2S1 8 1 8z" fill="none" stroke="currentColor" stroke-width="1.3"/><circle cx="8" cy="8" r="1.9" fill="none" stroke="currentColor" stroke-width="1.3"/></svg>+5 more</a></div></div>
+      <span class="cnt">15×</span>
+    </div>
+    <div class="doccard">
+      <svg viewBox="0 0 16 16" style="width:15px;height:15px;flex:none;margin-top:2px;color:var(--ink-3)" aria-hidden="true">
+        <path d="M4 1.5h5L12.5 5v9.5h-9z" fill="none" stroke="currentColor" stroke-width="1.3"/>
+        <path d="M9 1.5V5h3.5" fill="none" stroke="currentColor" stroke-width="1.3"/></svg>
+      <div style="min-width:0"><div class="nm">DIS SUM.jpeg</div><div class="mt">cited on page 1</div>
+        <div class="opens"><a class="pgbtn" href="../NTR-Patients-Files/AP12054472/Clinical%20notes/1763213717265_DIS%20SUM.jpeg" target="_blank" rel="noopener" data-name="1763213717265_DIS SUM.jpeg" data-page="1" data-pages="1" data-url="../NTR-Patients-Files/AP12054472/Clinical%20notes/1763213717265_DIS%20SUM.jpeg" title="Open 1763213717265_DIS SUM.jpeg"><svg viewBox="0 0 16 16" class="eye" aria-hidden="true"><path d="M1 8s2.6-4.2 7-4.2S15 8 15 8s-2.6 4.2-7 4.2S1 8 1 8z" fill="none" stroke="currentColor" stroke-width="1.3"/><circle cx="8" cy="8" r="1.9" fill="none" stroke="currentColor" stroke-width="1.3"/></svg>View</a></div></div>
+      <span class="cnt">6×</span>
+    </div>
+    <div class="doccard">
+      <svg viewBox="0 0 16 16" style="width:15px;height:15px;flex:none;margin-top:2px;color:var(--ink-3)" aria-hidden="true">
+        <path d="M4 1.5h5L12.5 5v9.5h-9z" fill="none" stroke="currentColor" stroke-width="1.3"/>
+        <path d="M9 1.5V5h3.5" fill="none" stroke="currentColor" stroke-width="1.3"/></svg>
+      <div style="min-width:0"><div class="nm">postfundus.jpeg</div><div class="mt">cited on page 1</div>
+        <div class="opens"><a class="pgbtn" href="../NTR-Patients-Files/AP12054472/Clinical%20notes/1770739117097_postfundus.jpeg" target="_blank" rel="noopener" data-name="1770739117097_postfundus.jpeg" data-page="1" data-pages="1" data-url="../NTR-Patients-Files/AP12054472/Clinical%20notes/1770739117097_postfundus.jpeg" title="Open 1770739117097_postfundus.jpeg"><svg viewBox="0 0 16 16" class="eye" aria-hidden="true"><path d="M1 8s2.6-4.2 7-4.2S15 8 15 8s-2.6 4.2-7 4.2S1 8 1 8z" fill="none" stroke="currentColor" stroke-width="1.3"/><circle cx="8" cy="8" r="1.9" fill="none" stroke="currentColor" stroke-width="1.3"/></svg>View</a></div></div>
+      <span class="cnt">4×</span>
+    </div>
+    <div class="doccard">
+      <svg viewBox="0 0 16 16" style="width:15px;height:15px;flex:none;margin-top:2px;color:var(--ink-3)" aria-hidden="true">
+        <path d="M4 1.5h5L12.5 5v9.5h-9z" fill="none" stroke="currentColor" stroke-width="1.3"/>
+        <path d="M9 1.5V5h3.5" fill="none" stroke="currentColor" stroke-width="1.3"/></svg>
+      <div style="min-width:0"><div class="nm">5046 SAMUELSUVARNA LAL BIL.pdf</div><div class="mt">cited on page 1</div>
+        <div class="opens"><a class="pgbtn" href="../NTR-Patients-Files/AP12054472/Clinical%20notes/1765043241734_5046%20SAMUELSUVARNA%20LAL%20BIL.pdf#page=1" target="_blank" rel="noopener" data-name="1765043241734_5046 SAMUELSUVARNA LAL BIL.pdf" data-page="1" data-pages="1" data-url="../NTR-Patients-Files/AP12054472/Clinical%20notes/1765043241734_5046%20SAMUELSUVARNA%20LAL%20BIL.pdf" title="Open page 1 of 1765043241734_5046 SAMUELSUVARNA LAL BIL.pdf"><svg viewBox="0 0 16 16" class="eye" aria-hidden="true"><path d="M1 8s2.6-4.2 7-4.2S15 8 15 8s-2.6 4.2-7 4.2S1 8 1 8z" fill="none" stroke="currentColor" stroke-width="1.3"/><circle cx="8" cy="8" r="1.9" fill="none" stroke="currentColor" stroke-width="1.3"/></svg>1</a></div></div>
+      <span class="cnt">2×</span>
+    </div>
+    <div class="doccard">
+      <svg viewBox="0 0 16 16" style="width:15px;height:15px;flex:none;margin-top:2px;color:var(--ink-3)" aria-hidden="true">
+        <path d="M4 1.5h5L12.5 5v9.5h-9z" fill="none" stroke="currentColor" stroke-width="1.3"/>
+        <path d="M9 1.5V5h3.5" fill="none" stroke="currentColor" stroke-width="1.3"/></svg>
+      <div style="min-width:0"><div class="nm">INTRAOP06.jpeg</div><div class="mt">cited on page 1</div>
+        <div class="opens"><a class="pgbtn" href="../NTR-Patients-Files/AP12054472/Clinical%20notes/1770739017584_INTRAOP06.jpeg" target="_blank" rel="noopener" data-name="1770739017584_INTRAOP06.jpeg" data-page="1" data-pages="1" data-url="../NTR-Patients-Files/AP12054472/Clinical%20notes/1770739017584_INTRAOP06.jpeg" title="Open 1770739017584_INTRAOP06.jpeg"><svg viewBox="0 0 16 16" class="eye" aria-hidden="true"><path d="M1 8s2.6-4.2 7-4.2S15 8 15 8s-2.6 4.2-7 4.2S1 8 1 8z" fill="none" stroke="currentColor" stroke-width="1.3"/><circle cx="8" cy="8" r="1.9" fill="none" stroke="currentColor" stroke-width="1.3"/></svg>View</a></div></div>
+      <span class="cnt">2×</span>
+    </div>
+    <div class="doccard">
+      <svg viewBox="0 0 16 16" style="width:15px;height:15px;flex:none;margin-top:2px;color:var(--ink-3)" aria-hidden="true">
+        <path d="M4 1.5h5L12.5 5v9.5h-9z" fill="none" stroke="currentColor" stroke-width="1.3"/>
+        <path d="M9 1.5V5h3.5" fill="none" stroke="currentColor" stroke-width="1.3"/></svg>
+      <div style="min-width:0"><div class="nm">post clinical pic.jpeg</div><div class="mt">cited on page 1</div>
+        <div class="opens"><a class="pgbtn" href="../NTR-Patients-Files/AP12054472/Clinical%20notes/1770739125911_post%20clinical%20pic.jpeg" target="_blank" rel="noopener" data-name="1770739125911_post clinical pic.jpeg" data-page="1" data-pages="1" data-url="../NTR-Patients-Files/AP12054472/Clinical%20notes/1770739125911_post%20clinical%20pic.jpeg" title="Open 1770739125911_post clinical pic.jpeg"><svg viewBox="0 0 16 16" class="eye" aria-hidden="true"><path d="M1 8s2.6-4.2 7-4.2S15 8 15 8s-2.6 4.2-7 4.2S1 8 1 8z" fill="none" stroke="currentColor" stroke-width="1.3"/><circle cx="8" cy="8" r="1.9" fill="none" stroke="currentColor" stroke-width="1.3"/></svg>View</a></div></div>
+      <span class="cnt">2×</span>
+    </div>
+    <div class="doccard">
+      <svg viewBox="0 0 16 16" style="width:15px;height:15px;flex:none;margin-top:2px;color:var(--ink-3)" aria-hidden="true">
+        <path d="M4 1.5h5L12.5 5v9.5h-9z" fill="none" stroke="currentColor" stroke-width="1.3"/>
+        <path d="M9 1.5V5h3.5" fill="none" stroke="currentColor" stroke-width="1.3"/></svg>
+      <div style="min-width:0"><div class="nm">INTRAOP04.jpeg</div><div class="mt">cited on page 1</div>
+        <div class="opens"><a class="pgbtn" href="../NTR-Patients-Files/AP12054472/Clinical%20notes/1770739017573_INTRAOP04.jpeg" target="_blank" rel="noopener" data-name="1770739017573_INTRAOP04.jpeg" data-page="1" data-pages="1" data-url="../NTR-Patients-Files/AP12054472/Clinical%20notes/1770739017573_INTRAOP04.jpeg" title="Open 1770739017573_INTRAOP04.jpeg"><svg viewBox="0 0 16 16" class="eye" aria-hidden="true"><path d="M1 8s2.6-4.2 7-4.2S15 8 15 8s-2.6 4.2-7 4.2S1 8 1 8z" fill="none" stroke="currentColor" stroke-width="1.3"/><circle cx="8" cy="8" r="1.9" fill="none" stroke="currentColor" stroke-width="1.3"/></svg>View</a></div></div>
+      <span class="cnt">2×</span>
+    </div>
+    <div class="doccard">
+      <svg viewBox="0 0 16 16" style="width:15px;height:15px;flex:none;margin-top:2px;color:var(--ink-3)" aria-hidden="true">
+        <path d="M4 1.5h5L12.5 5v9.5h-9z" fill="none" stroke="currentColor" stroke-width="1.3"/>
+        <path d="M9 1.5V5h3.5" fill="none" stroke="currentColor" stroke-width="1.3"/></svg>
+      <div style="min-width:0"><div class="nm">INTRAOP07.jpeg</div><div class="mt">cited on page 1</div>
+        <div class="opens"><a class="pgbtn" href="../NTR-Patients-Files/AP12054472/Clinical%20notes/1770739037948_INTRAOP07.jpeg" target="_blank" rel="noopener" data-name="1770739037948_INTRAOP07.jpeg" data-page="1" data-pages="1" data-url="../NTR-Patients-Files/AP12054472/Clinical%20notes/1770739037948_INTRAOP07.jpeg" title="Open 1770739037948_INTRAOP07.jpeg"><svg viewBox="0 0 16 16" class="eye" aria-hidden="true"><path d="M1 8s2.6-4.2 7-4.2S15 8 15 8s-2.6 4.2-7 4.2S1 8 1 8z" fill="none" stroke="currentColor" stroke-width="1.3"/><circle cx="8" cy="8" r="1.9" fill="none" stroke="currentColor" stroke-width="1.3"/></svg>View</a></div></div>
+      <span class="cnt">2×</span>
+    </div>
+    <div class="doccard">
+      <svg viewBox="0 0 16 16" style="width:15px;height:15px;flex:none;margin-top:2px;color:var(--ink-3)" aria-hidden="true">
+        <path d="M4 1.5h5L12.5 5v9.5h-9z" fill="none" stroke="currentColor" stroke-width="1.3"/>
+        <path d="M9 1.5V5h3.5" fill="none" stroke="currentColor" stroke-width="1.3"/></svg>
+      <div style="min-width:0"><div class="nm">post cp3.jpeg</div><div class="mt">cited on page 1</div>
+        <div class="opens"><a class="pgbtn" href="../NTR-Patients-Files/AP12054472/Clinical%20notes/1765043331949_post%20cp3.jpeg" target="_blank" rel="noopener" data-name="1765043331949_post cp3.jpeg" data-page="1" data-pages="1" data-url="../NTR-Patients-Files/AP12054472/Clinical%20notes/1765043331949_post%20cp3.jpeg" title="Open 1765043331949_post cp3.jpeg"><svg viewBox="0 0 16 16" class="eye" aria-hidden="true"><path d="M1 8s2.6-4.2 7-4.2S15 8 15 8s-2.6 4.2-7 4.2S1 8 1 8z" fill="none" stroke="currentColor" stroke-width="1.3"/><circle cx="8" cy="8" r="1.9" fill="none" stroke="currentColor" stroke-width="1.3"/></svg>View</a></div></div>
+      <span class="cnt">1×</span>
+    </div>
+    <div class="doccard">
+      <svg viewBox="0 0 16 16" style="width:15px;height:15px;flex:none;margin-top:2px;color:var(--ink-3)" aria-hidden="true">
+        <path d="M4 1.5h5L12.5 5v9.5h-9z" fill="none" stroke="currentColor" stroke-width="1.3"/>
+        <path d="M9 1.5V5h3.5" fill="none" stroke="currentColor" stroke-width="1.3"/></svg>
+      <div style="min-width:0"><div class="nm">INTRAOP02.jpeg</div><div class="mt">cited on page 1</div>
+        <div class="opens"><a class="pgbtn" href="../NTR-Patients-Files/AP12054472/Clinical%20notes/1770738997804_INTRAOP02.jpeg" target="_blank" rel="noopener" data-name="1770738997804_INTRAOP02.jpeg" data-page="1" data-pages="1" data-url="../NTR-Patients-Files/AP12054472/Clinical%20notes/1770738997804_INTRAOP02.jpeg" title="Open 1770738997804_INTRAOP02.jpeg"><svg viewBox="0 0 16 16" class="eye" aria-hidden="true"><path d="M1 8s2.6-4.2 7-4.2S15 8 15 8s-2.6 4.2-7 4.2S1 8 1 8z" fill="none" stroke="currentColor" stroke-width="1.3"/><circle cx="8" cy="8" r="1.9" fill="none" stroke="currentColor" stroke-width="1.3"/></svg>View</a></div></div>
+      <span class="cnt">1×</span>
+    </div>
+    <div class="doccard">
+      <svg viewBox="0 0 16 16" style="width:15px;height:15px;flex:none;margin-top:2px;color:var(--ink-3)" aria-hidden="true">
+        <path d="M4 1.5h5L12.5 5v9.5h-9z" fill="none" stroke="currentColor" stroke-width="1.3"/>
+        <path d="M9 1.5V5h3.5" fill="none" stroke="currentColor" stroke-width="1.3"/></svg>
+      <div style="min-width:0"><div class="nm">INTRAOP05.jpeg</div><div class="mt">cited on page 1</div>
+        <div class="opens"><a class="pgbtn" href="../NTR-Patients-Files/AP12054472/Clinical%20notes/1770739017579_INTRAOP05.jpeg" target="_blank" rel="noopener" data-name="1770739017579_INTRAOP05.jpeg" data-page="1" data-pages="1" data-url="../NTR-Patients-Files/AP12054472/Clinical%20notes/1770739017579_INTRAOP05.jpeg" title="Open 1770739017579_INTRAOP05.jpeg"><svg viewBox="0 0 16 16" class="eye" aria-hidden="true"><path d="M1 8s2.6-4.2 7-4.2S15 8 15 8s-2.6 4.2-7 4.2S1 8 1 8z" fill="none" stroke="currentColor" stroke-width="1.3"/><circle cx="8" cy="8" r="1.9" fill="none" stroke="currentColor" stroke-width="1.3"/></svg>View</a></div></div>
+      <span class="cnt">1×</span>
+    </div>
+    <div class="doccard">
+      <svg viewBox="0 0 16 16" style="width:15px;height:15px;flex:none;margin-top:2px;color:var(--ink-3)" aria-hidden="true">
+        <path d="M4 1.5h5L12.5 5v9.5h-9z" fill="none" stroke="currentColor" stroke-width="1.3"/>
+        <path d="M9 1.5V5h3.5" fill="none" stroke="currentColor" stroke-width="1.3"/></svg>
+      <div style="min-width:0"><div class="nm">INTRAOP03.jpeg</div><div class="mt">cited on page 1</div>
+        <div class="opens"><a class="pgbtn" href="../NTR-Patients-Files/AP12054472/Clinical%20notes/1770738997809_INTRAOP03.jpeg" target="_blank" rel="noopener" data-name="1770738997809_INTRAOP03.jpeg" data-page="1" data-pages="1" data-url="../NTR-Patients-Files/AP12054472/Clinical%20notes/1770738997809_INTRAOP03.jpeg" title="Open 1770738997809_INTRAOP03.jpeg"><svg viewBox="0 0 16 16" class="eye" aria-hidden="true"><path d="M1 8s2.6-4.2 7-4.2S15 8 15 8s-2.6 4.2-7 4.2S1 8 1 8z" fill="none" stroke="currentColor" stroke-width="1.3"/><circle cx="8" cy="8" r="1.9" fill="none" stroke="currentColor" stroke-width="1.3"/></svg>View</a></div></div>
+      <span class="cnt">1×</span>
+    </div>
+    <div class="doccard">
+      <svg viewBox="0 0 16 16" style="width:15px;height:15px;flex:none;margin-top:2px;color:var(--ink-3)" aria-hidden="true">
+        <path d="M4 1.5h5L12.5 5v9.5h-9z" fill="none" stroke="currentColor" stroke-width="1.3"/>
+        <path d="M9 1.5V5h3.5" fill="none" stroke="currentColor" stroke-width="1.3"/></svg>
+      <div style="min-width:0"><div class="nm">SCAR PIC.jpeg</div><div class="mt">cited on page 1</div>
+        <div class="opens"><a class="pgbtn" href="../NTR-Patients-Files/AP12054472/Clinical%20notes/1763213710354_SCAR%20PIC.jpeg" target="_blank" rel="noopener" data-name="1763213710354_SCAR PIC.jpeg" data-page="1" data-pages="1" data-url="../NTR-Patients-Files/AP12054472/Clinical%20notes/1763213710354_SCAR%20PIC.jpeg" title="Open 1763213710354_SCAR PIC.jpeg"><svg viewBox="0 0 16 16" class="eye" aria-hidden="true"><path d="M1 8s2.6-4.2 7-4.2S15 8 15 8s-2.6 4.2-7 4.2S1 8 1 8z" fill="none" stroke="currentColor" stroke-width="1.3"/><circle cx="8" cy="8" r="1.9" fill="none" stroke="currentColor" stroke-width="1.3"/></svg>View</a></div></div>
+      <span class="cnt">1×</span>
+    </div>
+    <div class="doccard">
+      <svg viewBox="0 0 16 16" style="width:15px;height:15px;flex:none;margin-top:2px;color:var(--ink-3)" aria-hidden="true">
+        <path d="M4 1.5h5L12.5 5v9.5h-9z" fill="none" stroke="currentColor" stroke-width="1.3"/>
+        <path d="M9 1.5V5h3.5" fill="none" stroke="currentColor" stroke-width="1.3"/></svg>
+      <div style="min-width:0"><div class="nm">SCAR PIC 1.jpeg</div><div class="mt">cited on page 1</div>
+        <div class="opens"><a class="pgbtn" href="../NTR-Patients-Files/AP12054472/Clinical%20notes/1763213710348_SCAR%20PIC%201.jpeg" target="_blank" rel="noopener" data-name="1763213710348_SCAR PIC 1.jpeg" data-page="1" data-pages="1" data-url="../NTR-Patients-Files/AP12054472/Clinical%20notes/1763213710348_SCAR%20PIC%201.jpeg" title="Open 1763213710348_SCAR PIC 1.jpeg"><svg viewBox="0 0 16 16" class="eye" aria-hidden="true"><path d="M1 8s2.6-4.2 7-4.2S15 8 15 8s-2.6 4.2-7 4.2S1 8 1 8z" fill="none" stroke="currentColor" stroke-width="1.3"/><circle cx="8" cy="8" r="1.9" fill="none" stroke="currentColor" stroke-width="1.3"/></svg>View</a></div></div>
+      <span class="cnt">1×</span>
+    </div></div></div></section>
+  <footer><span>Claim AP12054472 &middot; generated from AP.json on 21 August 2026</span>
+    <span>Evidence text and page numbers are reproduced exactly as recorded by the review engine.</span></footer>
+</div></main>
+<div class="toast" id="toast"></div>
+<div class="vwrap" id="viewer" role="dialog" aria-label="Document viewer">
+  <div class="vbd"></div>
+  <div class="vpanel">
+    <div class="vhead">
+      <span class="vname" id="vname"></span>
+      <span class="vpage" id="vpage"></span>
+      <button class="abtn vstep" id="vprev" title="Previous cited page (&larr;)">&lsaquo;</button>
+      <button class="abtn vstep" id="vnext" title="Next cited page (&rarr;)">&rsaquo;</button>
+      <span class="sp"></span>
+      <a class="abtn" id="vopen" href="#" target="_blank" rel="noopener">Open in new tab</a>
+      <button class="abtn vclose" id="vclose" title="Close (Esc)">&times;</button>
+    </div>
+    <div class="vstrip" id="vpages"></div>
+    <div class="vbody" id="vbody"></div>
+    <div class="vfoot">If the document does not appear here, use <b>Open in new tab</b> &mdash;
+      some browsers block embedded PDFs from local folders.</div>
+  </div>
+</div>
+<script>window.CLAIM_ID="AP12054472";</script>
+<script>
+/* ------------------------------------------------------------------ helpers */
+function money(n){
+  n = Math.round((Number(n)||0)*100)/100;
+  var neg = n<0; n = Math.abs(n);
+  var whole = Math.floor(n);
+  var dec = (Math.abs(n-whole)<0.005) ? '' : n.toFixed(2).slice(-3);
+  var s = String(whole), out;
+  if(s.length>3){
+    var head=s.slice(0,-3), tail=s.slice(-3), parts=[];
+    while(head.length>2){parts.unshift(head.slice(-2));head=head.slice(0,-2);}
+    if(head)parts.unshift(head);
+    out=parts.join(',')+','+tail;
+  } else out=s;
+  return (neg?'-':'')+'₹ '+out+dec;
+}
+function store(k,v){try{localStorage.setItem(k,v);}catch(e){}}
+function fetchv(k){try{return localStorage.getItem(k);}catch(e){return null;}}
+function toast(msg){
+  var t=document.getElementById('toast'); if(!t)return;
+  t.textContent=msg; t.classList.add('show');
+  clearTimeout(t._t); t._t=setTimeout(function(){t.classList.remove('show');},4200);
+}
+
+/* -------------------------------------------------------- document viewer */
+var VIEW={url:'',name:'',pages:[],page:'1',pdf:false};
+
+function renderPage(page){
+  VIEW.page=String(page);
+  var body=document.getElementById('vbody');
+  var href=VIEW.pdf ? VIEW.url+'#page='+VIEW.page : VIEW.url;
+  /* rebuild the frame: changing only the #fragment does not always re-navigate */
+  body.innerHTML = VIEW.pdf
+    ? '<iframe src="'+href+'" title="'+VIEW.name+'"></iframe>'
+    : '<img src="'+VIEW.url+'" alt="'+VIEW.name+'">';
+  document.getElementById('vopen').href=href;
+
+  var i=VIEW.pages.indexOf(VIEW.page);
+  var label=document.getElementById('vpage');
+  if(!VIEW.pdf) label.textContent='Image';
+  else if(VIEW.pages.length>1)
+    label.textContent='Page '+VIEW.page+'  ·  '+(i<0?'?':(i+1))+' of '+VIEW.pages.length+' cited';
+  else label.textContent='Page '+VIEW.page;
+
+  var strip=document.getElementById('vpages');
+  strip.innerHTML='';
+  if(VIEW.pdf && VIEW.pages.length>1){
+    VIEW.pages.forEach(function(p){
+      var el=document.createElement('button');
+      el.className='ppill'+(p===VIEW.page?' on':'');
+      el.textContent=p; el.dataset.goto=p;
+      el.title='Cited page '+p;
+      strip.appendChild(el);
+    });
+  }
+  document.getElementById('vprev').disabled = (i<=0);
+  document.getElementById('vnext').disabled = (i<0 || i>=VIEW.pages.length-1);
+}
+
+function stepPage(d){
+  var i=VIEW.pages.indexOf(VIEW.page);
+  if(i<0) return;
+  var j=i+d;
+  if(j>=0 && j<VIEW.pages.length) renderPage(VIEW.pages[j]);
+}
+
+function openViewer(href,name,page,pages){
+  var w=document.getElementById('viewer'); if(!w) return false;
+  var url=href.split('#')[0];
+  VIEW={url:url, name:name, page:String(page), pdf:/\.pdf$/i.test(url),
+        pages:(pages||String(page)).split(',').filter(Boolean)};
+  document.getElementById('vname').textContent=name;
+  renderPage(page);
+  w.classList.add('open');
+  document.body.style.overflow='hidden';
+  return true;
+}
+function closeViewer(){
+  var w=document.getElementById('viewer'); if(!w) return;
+  w.classList.remove('open');
+  document.getElementById('vbody').innerHTML='';   // stop the pdf/image loading
+  document.body.style.overflow='';
+}
+document.addEventListener('keydown',function(e){
+  var w=document.getElementById('viewer');
+  if(!w||!w.classList.contains('open')) return;
+  if(e.key==='Escape'){ closeViewer(); }
+  else if(e.key==='ArrowRight'){ e.preventDefault(); stepPage(1); }
+  else if(e.key==='ArrowLeft'){ e.preventDefault(); stepPage(-1); }
+});
+
+/* ---------------------------------------------------------- deduction editor */
+var SKEY = 'ntr.deductions.' + (window.CLAIM_ID||'claim');
+var extraSeq = 0;
+
+/* --- consider / do-not-consider across requirements, rejections, lower code --- */
+function txt(id,v){ var el=document.getElementById(id); if(el) el.textContent=v; }
+
+function recalcFlags(){
+  var req=[], rej=0, alt=null;
+  document.querySelectorAll('.cbx').forEach(function(c){
+    var host=c.closest('[data-flag]'); if(host) host.classList.toggle('off', !c.checked);
+    if(!c.checked) return;
+    if(c.dataset.kind==='req') req.push(host);
+    else if(c.dataset.kind==='rej') rej++;
+    else if(c.dataset.kind==='alt' && alt===null){
+      var h=host.querySelector('.cat');            /* the proposed code cell */
+      alt=h ? h.textContent.trim() : 'Yes';
+    }
+  });
+  var tot=req.length,
+      met=req.filter(function(i){return i.dataset.state==='met';}).length,
+      gaps=tot-met,
+      score=tot?Math.round(100*met/tot):0;
+  txt('kpigaps',gaps); txt('kpitot',tot); txt('kpiscore',score);
+  txt('navreq',met+'/'+tot);
+  txt('kpirej',rej); txt('navrej',rej); txt('badgerej',rej);
+  var altOn = alt!==null;
+  txt('kpicode', altOn?alt:'None');
+  txt('kpicodesub', altOn?'downcode suggested':'settle at the claimed code');
+  txt('navalt', altOn?1:0); txt('badgealt', altOn?1:0);
+
+  var rc=document.getElementById('kpirejcard');
+  if(rc){ rc.classList.toggle('k-critical',rej>0); rc.classList.toggle('k-good',rej===0); }
+  var qc=document.getElementById('kpireqcard');
+  if(qc){ qc.classList.toggle('k-critical',gaps>0); qc.classList.toggle('k-good',gaps===0); }
+
+  /* keep the filter counts honest */
+  var all=document.querySelectorAll('.frow[data-state]').length;
+  var f=document.querySelector('.fbtn[data-filter="all"] .c'); if(f) f.textContent=all;
+  f=document.querySelector('.fbtn[data-filter="notmet"] .c');
+  if(f) f.textContent=document.querySelectorAll('.frow[data-state="notmet"]').length;
+  f=document.querySelector('.fbtn[data-filter="met"] .c');
+  if(f) f.textContent=document.querySelectorAll('.frow[data-state="met"]').length;
+}
+
+function flagState(){
+  var o={};
+  document.querySelectorAll('.cbx').forEach(function(c){ o[c.dataset.key]=c.checked; });
+  return o;
+}
+
+function rowState(){
+  var st={rows:{},extra:[],note:''};
+  document.querySelectorAll('#dedtable tr[data-row]').forEach(function(tr){
+    var id=tr.dataset.row;
+    if(id.indexOf('x')===0){
+      st.extra.push({cat:tr.querySelector('[data-xcat]').value,
+                     rule:tr.querySelector('[data-xrule]').value,
+                     amt:tr.querySelector('.amtin').value,
+                     on:tr.querySelector('.ck').checked});
+    } else {
+      st.rows[id]={on:tr.querySelector('.ck').checked, amt:tr.querySelector('.amtin').value};
+    }
+  });
+  var n=document.getElementById('revnote'); if(n) st.note=n.value;
+  st.flags=flagState();
+  return st;
+}
+function save(){ store(SKEY, JSON.stringify(rowState())); }
+
+function recalc(){
+  var total=0, count=0, system=0;
+  document.querySelectorAll('#dedtable tr[data-row]').forEach(function(tr){
+    var ck=tr.querySelector('.ck'), inp=tr.querySelector('.amtin');
+    var val=Number(inp.value)||0, base=Number(tr.dataset.amt);
+    tr.classList.toggle('off', !ck.checked);
+    if(!isNaN(base)) system+=base;
+    var flag=tr.querySelector('.editflag');
+    if(flag) flag.style.display = (!isNaN(base) && Math.abs(val-base)>0.005) ? '' : 'none';
+    if(ck.checked){ total+=val; count++; }
+  });
+  var f=money(total);
+  ['finaltotal','heroamt','kpiamt'].forEach(function(id){
+    var el=document.getElementById(id); if(el) el.textContent=f;
+  });
+  var badge=document.getElementById('badgetotal'); if(badge) badge.textContent=f+' total';
+  var sub=document.getElementById('herosub');
+  if(sub) sub.textContent='across '+count+' applied deduction rule'+(count===1?'':'s');
+  var nd=document.getElementById('navded'); if(nd) nd.textContent=count;
+  var cl=document.getElementById('countline');
+  if(cl) cl.textContent='Total deduction — '+count+' rule'+(count===1?'':'s')+' considered';
+  var note=document.getElementById('chgnote');
+  if(note){
+    var d=total-system;
+    if(Math.abs(d)>0.005){
+      note.style.display='';
+      note.textContent=(d<0?'Reduced by ':'Increased by ')+money(Math.abs(d))+
+                       ' against the system proposal of '+money(system)+'.';
+    } else note.style.display='none';
+  }
+  save();
+}
+
+function addExtraRow(cat,rule,amt,on){
+  var tb=document.getElementById('extrarows'); if(!tb)return;
+  var id='x'+(++extraSeq);
+  var tr=document.createElement('tr');
+  tr.dataset.row=id; tr.dataset.amt='NaN';
+  tr.innerHTML='<td class="ckcell"><input class="ck" type="checkbox"'+(on===false?'':' checked')+
+    ' aria-label="Consider this deduction"></td>'+
+    '<td><input class="txtin" data-xcat placeholder="Category" style="min-width:120px"></td>'+
+    '<td class="rulecell"><input class="txtin" data-xrule placeholder="Reason for this deduction"></td>'+
+    '<td class="basis">Manual entry</td>'+
+    '<td><span class="tag t-manual">Reviewer</span></td>'+
+    '<td class="num"><input class="amtin" type="number" step="1" min="0" value="0">'+
+    '<button class="rmrow" title="Remove this row">&times;</button></td>';
+  tb.appendChild(tr);
+  tr.querySelector('[data-xcat]').value=cat||'';
+  tr.querySelector('[data-xrule]').value=rule||'';
+  tr.querySelector('.amtin').value=(amt===undefined?0:amt);
+  return tr;
+}
+
+function restore(){
+  var raw=fetchv(SKEY); if(!raw)return;
+  var st; try{st=JSON.parse(raw);}catch(e){return;}
+  Object.keys(st.rows||{}).forEach(function(id){
+    var tr=document.querySelector('#dedtable tr[data-row="'+id+'"]'); if(!tr)return;
+    tr.querySelector('.ck').checked = st.rows[id].on !== false;
+    tr.querySelector('.amtin').value = st.rows[id].amt;
+  });
+  (st.extra||[]).forEach(function(x){ addExtraRow(x.cat,x.rule,x.amt,x.on); });
+  var fl=st.flags||{};
+  document.querySelectorAll('.cbx').forEach(function(c){
+    if(fl.hasOwnProperty(c.dataset.key)) c.checked=!!fl[c.dataset.key];
+  });
+  var n=document.getElementById('revnote'); if(n&&st.note) n.value=st.note;
+}
+
+function exportCSV(){
+  var out=[['Claim','Considered','Section / category','Rule or finding','Basis','Source','Amount']];
+  document.querySelectorAll('#dedtable tr[data-row]').forEach(function(tr){
+    var cells=tr.children;
+    var cat=cells[1].querySelector('input')?cells[1].querySelector('input').value:cells[1].textContent.trim();
+    var rh=cells[2].querySelector('.rulehead');
+    var rule=cells[2].querySelector('input')?cells[2].querySelector('input').value
+             :(rh?rh.textContent:cells[2].textContent).trim();
+    out.push([window.CLAIM_ID||'', tr.querySelector('.ck').checked?'YES':'NO', cat,
+              rule.replace(/\s*check for overlap\s*/i,'').trim(),
+              cells[3].textContent.trim(), cells[4].textContent.trim(),
+              tr.querySelector('.amtin').value]);
+  });
+  var el=document.getElementById('finaltotal');
+  out.push(['','','','Approved deduction total','','', (el?el.textContent:'').replace(/[^\d.]/g,'')]);
+
+  /* the other three sections, with what the reviewer chose to consider */
+  document.querySelectorAll('.frow[data-flag]').forEach(function(tr){
+    var kind=tr.querySelector('.cbx').dataset.kind;
+    var section={req:'Requirement', rej:'Rejection flag', alt:'Lower procedure code'}[kind]||kind;
+    out.push([window.CLAIM_ID||'', tr.querySelector('.cbx').checked?'YES':'NO',
+              section+' - '+tr.querySelector('.cat').textContent.trim(),
+              tr.querySelector('.rulehead').textContent.trim(),
+              tr.dataset.state ? (tr.dataset.state==='met'?'Met':'Not met') : '', '', '']);
+  });
+  var csv=out.map(function(r){return r.map(function(c){
+    return '"'+String(c).replace(/"/g,'""')+'"';}).join(',');}).join('\r\n');
+  var a=document.createElement('a');
+  a.href=URL.createObjectURL(new Blob([csv],{type:'text/csv;charset=utf-8'}));
+  a.download=(window.CLAIM_ID||'claim')+'_deductions.csv';
+  document.body.appendChild(a); a.click(); a.remove();
+}
+
+document.addEventListener('DOMContentLoaded',function(){
+  restore(); if(document.getElementById('dedtable')) recalc(); recalcFlags();
+});
+
+document.addEventListener('input',function(e){
+  if(e.target.matches('.amtin')) recalc();
+  else if(e.target.matches('.txtin, #revnote')) save();
+});
+document.addEventListener('change',function(e){
+  if(e.target.matches('.cbx')){ recalcFlags(); save(); }
+  else if(e.target.matches('.ck')) recalc();
+});
+
+document.addEventListener('click',function(e){
+  /* a cited page opens in the side viewer; ctrl/middle click still opens a tab */
+  var eye=e.target.closest('a.pgbtn');
+  if(eye){
+    if(e.ctrlKey||e.metaKey||e.shiftKey||e.button===1) return;
+    e.preventDefault();
+    openViewer(eye.getAttribute('href'), eye.dataset.name||'Document',
+               eye.dataset.page||'1', eye.dataset.pages||'');
+    return;
+  }
+  if(e.target.closest('#vclose')||e.target.closest('.vbd')){ closeViewer(); return; }
+  var pill=e.target.closest('.ppill');
+  if(pill){ renderPage(pill.dataset.goto); return; }
+  if(e.target.closest('#vprev')){ stepPage(-1); return; }
+  if(e.target.closest('#vnext')){ stepPage(1); return; }
+
+  if(e.target.closest('#addrow')){ var r=addExtraRow(); r.querySelector('[data-xrule]').focus(); recalc(); return; }
+  var bulk=e.target.closest('[data-bulk]');
+  if(bulk){
+    var kind=bulk.dataset.bulk, on=bulk.dataset.on==='1';
+    document.querySelectorAll('.cbx[data-kind="'+kind+'"]').forEach(function(c){ c.checked=on; });
+    recalcFlags(); save(); return;
+  }
+  if(e.target.closest('#allon')){
+    document.querySelectorAll('#dedtable .ck').forEach(function(c){c.checked=true;}); recalc(); return; }
+  if(e.target.closest('#alloff')){
+    document.querySelectorAll('#dedtable .ck').forEach(function(c){c.checked=false;}); recalc(); return; }
+  if(e.target.closest('#exportcsv')){ exportCSV(); return; }
+  if(e.target.closest('#resetall')){
+    document.querySelectorAll('#extrarows tr').forEach(function(t){t.remove();});
+    document.querySelectorAll('#dedtable tr[data-row]').forEach(function(tr){
+      tr.querySelector('.ck').checked=true;
+      tr.querySelector('.amtin').value=tr.dataset.amt;
+    });
+    var n=document.getElementById('revnote'); if(n) n.value='';
+    recalc(); toast('Deductions reset to the system values.'); return;
+  }
+  var rm=e.target.closest('.rmrow');
+  if(rm){ rm.closest('tr').remove(); recalc(); return; }
+
+  var b=e.target.closest('.exbtn');
+  if(b){var r=document.getElementById(b.dataset.target);
+    if(r){r.classList.toggle('open');b.textContent=r.classList.contains('open')?'Hide why':'Why?';}return;}
+  var m=e.target.closest('.more');
+  if(m){var p=m.previousElementSibling;p.classList.toggle('clamp');
+    m.textContent=p.classList.contains('clamp')?'Read more':'Show less';return;}
+  var f=e.target.closest('.fbtn');
+  if(f&&f.dataset.filter){
+    f.parentNode.querySelectorAll('.fbtn').forEach(function(x){x.classList.remove('on')});
+    f.classList.add('on');
+    var v=f.dataset.filter;
+    document.querySelectorAll('.frow[data-state]').forEach(function(it){
+      it.classList.toggle('hide', v!=='all' && it.dataset.state!==v);
+    });
+    return;
+  }
+  var row=e.target.closest('tr.crow');
+  if(row&&row.dataset.href&&!e.target.closest('a')){location.href=row.dataset.href;}
+});
+</script>
+</body></html>
