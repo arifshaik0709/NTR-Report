@@ -22,10 +22,16 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+      - name: Assemble site
+        run: |
+          mkdir site
+          cp -r reports site/reports
+          cp -r NTR-Patients-Files site/NTR-Patients-Files
+          echo '<meta http-equiv="refresh" content="0; url=reports/">' > site/index.html
       - name: Upload pages artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: reports
+          path: site
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
